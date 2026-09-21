@@ -6,7 +6,7 @@ export default function Hero() {
 
       {/* Background */}
       <Image
-        src="/1.jpg"
+        src="/1.png"
         alt="Nowoczesny gabinet stomatologiczny"
         fill
         priority
@@ -88,14 +88,6 @@ export default function Hero() {
             Inżynierska 19 · 80-298 Gdańsk
           </span>
         </div>
-
-        {/* Phone */}
-        <a
-          href="tel:+48883000830"
-          className="text-white text-[10px] tracking-[0.25em] uppercase hover:text-white/70 transition"
-        >
-          +48 883 000 830
-        </a>
 
       </div>
 

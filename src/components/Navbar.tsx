@@ -24,18 +24,18 @@ export default function Navbar() {
       name: 'O Firmie',
       href: 'https://dentalcentrum.net/about.html',
     },
-    {
-      name: 'Cennik',
-      href: 'https://dentalcentrum.net/prices.html',
-    },
-    {
-      name: 'Galeria',
-      href: 'https://dentalcentrum.net/gallery.html',
-    },
-    {
-      name: 'Kontakt',
-      href: 'https://dentalcentrum.net/contact.html',
-    },
+ {
+  name: 'Cennik',
+  href: '/cennik',
+},
+{
+  name: 'Galeria',
+  href: '/galeria',
+},
+{
+  name: 'Kontakt',
+  href: '/kontakt',
+},
     {
       name: 'Pracownia Protetyczna',
       href: 'https://dentalcentrum.net/work.html',

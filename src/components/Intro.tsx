@@ -35,9 +35,7 @@ export default function Intro() {
             </p>
 
             <div className="pt-4">
-              <button className="text-white text-[10px] tracking-widest uppercase border-b border-blue-600 pb-2 hover:text-blue-400 transition-all">
-                Poznaj nas bliżej
-              </button>
+
             </div>
           </div>
 

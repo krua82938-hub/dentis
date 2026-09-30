@@ -23,7 +23,7 @@ export default function Footer() {
             </p>
 
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/profile.php?id=100063661112248"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-3 text-[10px] tracking-[0.25em] uppercase font-bold text-slate-800 hover:text-blue-700 transition"
@@ -122,18 +122,18 @@ export default function Footer() {
 
             <div className="flex flex-col gap-3">
 
-              <a
-                href="tel:+48883000830"
-                className="group flex items-center justify-between bg-black text-white px-6 py-4 text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-blue-700 transition-all"
-              >
-                <span>Zadzwoń do nas</span>
-                <span className="group-hover:translate-x-1 transition-transform">
-                  →
-                </span>
-              </a>
+<a
+  href="tel:+48883000830"
+  className="group flex items-center justify-between bg-black text-white px-6 py-4 text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-blue-700 transition-all"
+>
+  <span>Zadzwoń do nas</span>
+  <span className="group-hover:translate-x-1 transition-transform">
+    →
+  </span>
+</a>
 
               <a
-                href="https://www.facebook.com/"
+                href="https://www.facebook.com/profile.php?id=100063661112248"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group flex items-center justify-between border border-slate-200 text-black px-6 py-4 text-[10px] tracking-[0.2em] uppercase font-bold hover:border-blue-700 hover:text-blue-700 transition-all"

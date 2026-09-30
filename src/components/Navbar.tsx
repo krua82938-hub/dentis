@@ -10,35 +10,35 @@ export default function Navbar() {
   const [mobileOfferOpen, setMobileOfferOpen] = useState(false);
 
   const offerLinks = [
-    { name: 'MediRaty', href: 'https://dentalcentrum.net/about.html#' },
-    { name: 'Profilaktyka', href: 'https://dentalcentrum.net/about.html#' },
-    { name: 'Radiologia', href: 'https://dentalcentrum.net/about.html#' },
-    { name: 'Tomografia', href: 'https://dentalcentrum.net/about.html#' },
-    { name: 'Endodoncja', href: 'https://dentalcentrum.net/about.html#' },
-    { name: 'Protetyka', href: 'https://dentalcentrum.net/about.html#' },
-    { name: 'Implantologia', href: 'https://dentalcentrum.net/about.html#' },
+    { name: 'MediRaty', href: '/mediraty' },
+    { name: 'Profilaktyka', href: 'profilaktyka' },
+    { name: 'Radiologia', href: 'radiologia' },
+    { name: 'Tomografia', href: 'tomografia' },
+    { name: 'Endodoncja', href: 'endodoncja' },
+    { name: 'Protetyka', href: 'protetyka' },
+    { name: 'Implantologia', href: 'implantologia' },
   ];
 
   const mainLinks = [
     {
       name: 'O Firmie',
-      href: 'https://dentalcentrum.net/about.html',
+      href: '/o-firmie',
     },
- {
-  name: 'Cennik',
-  href: '/cennik',
-},
-{
-  name: 'Galeria',
-  href: '/galeria',
-},
-{
-  name: 'Kontakt',
-  href: '/kontakt',
-},
+    {
+      name: 'Cennik',
+      href: '/cennik',
+    },
+    {
+      name: 'Galeria',
+      href: '/galeria',
+    },
+    {
+      name: 'Kontakt',
+      href: '/kontakt',
+    },
     {
       name: 'Pracownia Protetyczna',
-      href: 'https://dentalcentrum.net/work.html',
+      href: '/pracownia-protetyczna',
     },
   ];
 
@@ -73,14 +73,7 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-7">
 
-          {/* O Firmie */}
-          <a
-            href="https://dentalcentrum.net/about.html"
-            className="relative text-white/85 hover:text-white text-[10px] tracking-[0.18em] uppercase font-medium transition-colors group"
-          >
-            O Firmie
-            <span className="absolute -bottom-2 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300" />
-          </a>
+
 
           {/* Oferta Dropdown */}
           <div
@@ -88,11 +81,12 @@ export default function Navbar() {
             onMouseEnter={() => setOfferOpen(true)}
             onMouseLeave={() => setOfferOpen(false)}
           >
-            <a
-              href="https://dentalcentrum.net/prop.html#"
+            <Link
+              href="/oferta"
               className="flex items-center gap-1.5 text-white/85 hover:text-white text-[10px] tracking-[0.18em] uppercase font-medium transition-colors py-3"
             >
               Oferta
+
               <ChevronDown
                 size={13}
                 strokeWidth={1.5}
@@ -100,7 +94,7 @@ export default function Navbar() {
                   offerOpen ? 'rotate-180' : ''
                 }`}
               />
-            </a>
+            </Link>
 
             {/* Dropdown */}
             <div
@@ -113,13 +107,13 @@ export default function Navbar() {
               <div className="w-56 bg-white shadow-2xl border border-slate-100 py-2">
 
                 {offerLinks.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
                     href={item.href}
                     className="block px-5 py-3 text-[9px] tracking-[0.15em] uppercase text-slate-700 hover:bg-slate-50 hover:text-blue-700 transition-colors"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
 
               </div>
@@ -128,7 +122,7 @@ export default function Navbar() {
 
           {/* Other Links */}
           {mainLinks.slice(1).map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               className="relative text-white/85 hover:text-white text-[10px] tracking-[0.18em] uppercase font-medium transition-colors group whitespace-nowrap"
@@ -136,12 +130,12 @@ export default function Navbar() {
               {link.name}
 
               <span className="absolute -bottom-2 left-0 w-0 h-px bg-white group-hover:w-full transition-all duration-300" />
-            </a>
+            </Link>
           ))}
 
           {/* Appointment */}
           <a
-            href="https://dentalcentrum.net/contact.html"
+            href="tel:+48883000830"
             className="ml-1 flex items-center gap-2 px-5 py-3 bg-white text-black text-[9px] tracking-[0.18em] uppercase font-bold hover:bg-blue-700 hover:text-white transition-all whitespace-nowrap"
           >
             <Calendar size={14} strokeWidth={1.5} />
@@ -156,6 +150,7 @@ export default function Navbar() {
           <a
             href="tel:+48883000830"
             className="text-white/90"
+            aria-label="Zadzwoń do Dental Centrum"
           >
             <Phone size={20} strokeWidth={1.3} />
           </a>
@@ -188,13 +183,13 @@ export default function Navbar() {
         <div className="px-6 py-6">
 
           {/* O Firmie */}
-          <a
-            href="https://dentalcentrum.net/about.html"
+          <Link
+            href="/o-firmie"
             onClick={() => setMobileOpen(false)}
             className="block py-4 border-b border-white/10 text-[10px] tracking-[0.25em] uppercase text-white/80 hover:text-white"
           >
             O Firmie
-          </a>
+          </Link>
 
           {/* Oferta */}
           <div className="border-b border-white/10">
@@ -223,38 +218,38 @@ export default function Navbar() {
               }`}
             >
               {offerLinks.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   onClick={() => setMobileOpen(false)}
                   className="block py-3 pl-4 text-[9px] tracking-[0.18em] uppercase text-white/50 hover:text-white transition"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
 
           </div>
 
-          {/* Other Mobile Links */}
+          {/* Cennik, Galeria, Kontakt, Pracownia */}
           {mainLinks.slice(1).map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               onClick={() => setMobileOpen(false)}
               className="block py-4 border-b border-white/10 text-[10px] tracking-[0.25em] uppercase text-white/80 hover:text-white"
             >
               {link.name}
-            </a>
+            </Link>
           ))}
 
           {/* Appointment */}
           <a
-            href="https://dentalcentrum.net/contact.html"
+            href="tel:+48883000830"
             onClick={() => setMobileOpen(false)}
             className="mt-6 flex items-center justify-center gap-3 bg-white text-black py-4 text-[10px] tracking-[0.25em] uppercase font-bold hover:bg-blue-700 hover:text-white transition"
           >
-            <Calendar size={15} strokeWidth={1.5} />
+            <Phone size={15} strokeWidth={1.5} />
             Umów wizytę
           </a>
 

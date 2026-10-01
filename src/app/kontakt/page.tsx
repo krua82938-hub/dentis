@@ -27,10 +27,6 @@ export default function KontaktPage() {
 
         <div className="relative mx-auto max-w-7xl">
           <div className="max-w-4xl">
-            <p className="mb-6 text-[10px] font-medium uppercase tracking-[0.4em] text-white/40">
-              Dental Centrum · Gdańsk
-            </p>
-
             <h1 className="font-serif text-5xl font-light leading-[0.95] tracking-tight text-white md:text-7xl lg:text-8xl">
               Porozmawiajmy
               <br />
@@ -67,85 +63,108 @@ export default function KontaktPage() {
               współczesnej stomatologii? Napisz lub zadzwoń.
             </p>
 
-            {/* CONTACT DETAILS */}
-            <div className="mt-12 space-y-7">
-              <a
-                href="tel:+48883000830"
-                className="group flex items-center gap-5"
-              >
-                <div className="flex h-12 w-12 items-center justify-center border border-slate-200 bg-white transition group-hover:border-[#17232D]">
-                  <Phone size={17} strokeWidth={1.3} />
-                </div>
+{/* CONTACT DETAILS */}
+<div className="mt-12 space-y-7">
 
-                <div>
-                  <p className="mb-1 text-[9px] uppercase tracking-[0.2em] text-slate-400">
-                    Telefon
-                  </p>
+  {/* Telefony */}
+<div className="flex items-center gap-5">
+  <div className="flex h-12 w-12 shrink-0 items-center justify-center border border-slate-200 bg-white">
+    <Phone size={17} strokeWidth={1.3} />
+  </div>
 
-                  <p className="text-sm font-medium">
-                    +48 883 000 830
-                  </p>
-                </div>
+  <div>
+    <p className="mb-1 text-[9px] uppercase tracking-[0.2em] text-slate-400">
+      Telefony
+    </p>
 
-                <ArrowUpRight
-                  size={16}
-                  className="ml-auto text-slate-300 transition group-hover:text-[#17232D]"
-                />
-              </a>
+    <div className="flex flex-wrap items-center gap-x-5 gap-y-1">
+      <a
+        href="tel:+48883000830"
+        className="text-sm font-medium transition hover:text-blue-700"
+      >
+        +48 883 000 830
+      </a>
 
-              <a
-                href="mailto:kontakt@dentalcentrum.net"
-                className="group flex items-center gap-5"
-              >
-                <div className="flex h-12 w-12 items-center justify-center border border-slate-200 bg-white transition group-hover:border-[#17232D]">
-                  <Mail size={17} strokeWidth={1.3} />
-                </div>
+      <span className="text-slate-300">|</span>
 
-                <div>
-                  <p className="mb-1 text-[9px] uppercase tracking-[0.2em] text-slate-400">
-                    E-mail
-                  </p>
+      <a
+        href="tel:+48583019780"
+        className="text-sm font-medium transition hover:text-blue-700"
+      >
+        +48 (58) 301 97 80
+      </a>
+    </div>
+  </div>
+</div>
 
-                  <p className="text-sm font-medium">
-                    kontakt@dentalcentrum.net
-                  </p>
-                </div>
+  {/* E-mail */}
+  <a
+    href="mailto:kontakt@dentalcentrum.net"
+    className="group flex items-center gap-5"
+  >
+    <div className="flex h-12 w-12 items-center justify-center border border-slate-200 bg-white transition group-hover:border-[#17232D]">
+      <Mail size={17} strokeWidth={1.3} />
+    </div>
 
-                <ArrowUpRight
-                  size={16}
-                  className="ml-auto text-slate-300 transition group-hover:text-[#17232D]"
-                />
-              </a>
+    <div>
+      <p className="mb-1 text-[9px] uppercase tracking-[0.2em] text-slate-400">
+        E-mail
+      </p>
 
-              <div className="flex items-center gap-5">
-                <div className="flex h-12 w-12 items-center justify-center border border-slate-200 bg-white">
-                  <MapPin size={17} strokeWidth={1.3} />
-                </div>
+      <p className="text-sm font-medium">
+        kontakt@dentalcentrum.net
+      </p>
+    </div>
 
-                <div>
-                  <p className="mb-1 text-[9px] uppercase tracking-[0.2em] text-slate-400">
-                    Adres
-                  </p>
+    <ArrowUpRight
+      size={16}
+      className="ml-auto text-slate-300 transition group-hover:text-[#17232D]"
+    />
+  </a>
 
-                  <p className="text-sm font-medium">
-                    Gdańsk
-                  </p>
-                </div>
-              </div>
+  {/* Adres */}
+  <a
+    href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x46fd759380246623:0x8d62a0073a0feecc?sa=X&ved=1t:8290&ictx=111"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="group flex items-center gap-5"
+  >
+    <div className="flex h-12 w-12 items-center justify-center border border-slate-200 bg-white transition group-hover:border-[#17232D]">
+      <MapPin size={17} strokeWidth={1.3} />
+    </div>
 
-              <div className="flex items-center gap-5">
-                <div className="flex h-12 w-12 items-center justify-center border border-slate-200 bg-white">
-                  <Clock size={17} strokeWidth={1.3} />
-                </div>
+    <div>
+      <p className="mb-1 text-[9px] uppercase tracking-[0.2em] text-slate-400">
+        Adres
+      </p>
 
-                <div>
-                  <p className="mb-1 text-[9px] uppercase tracking-[0.2em] text-slate-400">
-                    Godziny otwarcia
-                  </p>
+      <p className="text-sm font-medium">
+        Inżynierska 19
+        <br />
+        80-298 Gdańsk
+      </p>
+    </div>
 
-                  <p className="text-sm font-medium">
-                    Pon. – Pt. · 08:00 – 20:00
-                  </p>
+    <ArrowUpRight
+      size={16}
+      className="ml-auto text-slate-300 transition group-hover:text-[#17232D]"
+    />
+  </a>
+
+  {/* Godziny */}
+  <div className="flex items-center gap-5">
+    <div className="flex h-12 w-12 items-center justify-center border border-slate-200 bg-white">
+      <Clock size={17} strokeWidth={1.3} />
+    </div>
+
+    <div>
+      <p className="mb-1 text-[9px] uppercase tracking-[0.2em] text-slate-400">
+        Godziny otwarcia
+      </p>
+
+      <p className="text-sm font-medium">
+        Pon. – Pt. · 08:00 – 18:00
+      </p>
                 </div>
               </div>
             </div>
@@ -317,39 +336,23 @@ export default function KontaktPage() {
         </div>
       </section>
 
-      {/* MAP / LOCATION */}
-      <section className="px-6 pb-20 md:px-12 md:pb-28">
-        <div className="mx-auto max-w-7xl">
-          <div className="relative flex min-h-[400px] items-center justify-center overflow-hidden bg-[#DDE1E3]">
-            <div className="absolute inset-0 opacity-30">
-              <div className="absolute left-[10%] top-[20%] h-px w-[80%] rotate-12 bg-[#17232D]" />
-              <div className="absolute left-[5%] top-[60%] h-px w-[90%] -rotate-6 bg-[#17232D]" />
-              <div className="absolute left-[25%] top-0 h-full w-px rotate-[18deg] bg-[#17232D]" />
-              <div className="absolute left-[70%] top-0 h-full w-px -rotate-[12deg] bg-[#17232D]" />
-            </div>
-
-            <div className="relative z-10 bg-[#17232D] px-10 py-8 text-center text-white shadow-2xl">
-              <MapPin
-                size={25}
-                strokeWidth={1.3}
-                className="mx-auto mb-4"
-              />
-
-              <p className="text-[9px] uppercase tracking-[0.3em] text-white/50">
-                Odwiedź nas
-              </p>
-
-              <p className="mt-2 font-serif text-2xl font-light">
-                Dental Centrum
-              </p>
-
-              <p className="mt-2 text-xs text-white/50">
-                Gdańsk
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+   {/* MAP / LOCATION */}
+<section className="px-6 pb-20 md:px-12 md:pb-28">
+  <div className="mx-auto max-w-7xl">
+    <div className="overflow-hidden bg-white shadow-[0_20px_70px_rgba(20,30,40,0.06)]">
+      <iframe
+        src="https://www.google.com/maps?q=Klinika%20Stomatologiczna%20Dental%20Centrum%2C%20In%C5%BCynierska%2019%2C%2080-298%20Gda%C5%84sk&output=embed"
+        width="100%"
+        height="450"
+        style={{ border: 0 }}
+        loading="lazy"
+        allowFullScreen
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Dental Centrum - mapa dojazdu"
+      />
+    </div>
+  </div>
+</section>
     </main>
   );
 }

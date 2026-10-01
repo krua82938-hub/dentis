@@ -88,14 +88,6 @@ export default function Footer() {
                 >
                   +48 883 000 830
                 </a>
-
-                <a
-                  href="tel:+48533575963"
-                  className="block text-black hover:text-blue-700 transition"
-                >
-                  +48 533 575 963
-                </a>
-
                 <a
                   href="tel:+48583019780"
                   className="block text-black hover:text-blue-700 transition"

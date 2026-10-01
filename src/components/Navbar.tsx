@@ -10,7 +10,6 @@ export default function Navbar() {
   const [mobileOfferOpen, setMobileOfferOpen] = useState(false);
 
   const offerLinks = [
-    { name: 'MediRaty', href: '/mediraty' },
     { name: 'Profilaktyka', href: 'profilaktyka' },
     { name: 'Radiologia', href: 'radiologia' },
     { name: 'Tomografia', href: 'tomografia' },
@@ -47,13 +46,29 @@ export default function Navbar() {
 
       {/* Top Utility Bar */}
       <div className="flex justify-end px-6 md:px-12 py-3 text-[10px] tracking-[0.25em] uppercase border-b border-white/10 backdrop-blur-md bg-black/5 font-medium text-white/90">
-        <a
-          href="tel:+48883000830"
-          className="flex items-center gap-2 hover:text-white transition-colors"
-        >
-          <Phone size={12} strokeWidth={1.5} />
-          +48 883 000 830
-        </a>
+        <div className="flex items-center gap-5">
+
+          {/* Numer 1 */}
+          <a
+            href="tel:+48883000830"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <Phone size={12} strokeWidth={1.5} />
+            +48 883 000 830
+          </a>
+
+          <span className="text-white/30">|</span>
+
+          {/* Numer 2 */}
+          <a
+            href="tel:+48583019780"
+            className="flex items-center gap-2 hover:text-white transition-colors"
+          >
+            <Phone size={12} strokeWidth={1.5} />
+            58 301 97 80
+          </a>
+
+        </div>
       </div>
 
       {/* Main Navigation */}
@@ -72,8 +87,6 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex items-center gap-7">
-
-
 
           {/* Oferta Dropdown */}
           <div

@@ -12,10 +12,10 @@ import {
 
 const services = [
   {
-    title: 'MediRaty',
-    href: '/mediraty',
+    title: 'Tomografia',
+    href: '/tomografia',
     icon: <CreditCard size={24} />,
-    desc: 'Wygodne finansowanie leczenia stomatologicznego w dogodnych ratach.',
+    desc: 'Nowoczesna diagnostyka tomograficzna zapewniająca szczegółowy obraz struktur jamy ustnej.',
   },
   {
     title: 'Profilaktyka',
@@ -24,8 +24,8 @@ const services = [
     desc: 'Profilaktyka i higienizacja dla zdrowych zębów oraz pięknego uśmiechu.',
   },
   {
-    title: 'Radiologia i Tomografia',
-    href: '/radiologia-tomografia',
+    title: 'Radiologia',
+    href: '/radiologia',
     icon: <Scan size={24} />,
     desc: 'Nowoczesna diagnostyka obrazowa wspierająca precyzyjne planowanie leczenia.',
   },

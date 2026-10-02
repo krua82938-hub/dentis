@@ -72,88 +72,84 @@ export default function ProfilaktykaPage() {
 
             </div>
 
-            {/* PRAWA - ZDJĘCIA */}
-            <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
-
-              <div className="relative h-[280px] overflow-hidden bg-slate-200 md:h-[320px]">
-                <Image
-                  src="/pro1.jpg"
-                  alt="Profesjonalna profilaktyka stomatologiczna"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="relative h-[280px] overflow-hidden bg-slate-200 md:h-[320px]">
-                <Image
-                  src="/pro2.jpg"
-                  alt="Zabiegi profilaktyczne w gabinecie stomatologicznym"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-            </div>
-
+  {/* PRAWA - ZDJĘCIE */}
+<div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-1">
+  <div className="relative h-[500px] overflow-hidden bg-transparent md:h-[600px]">
+    <Image
+      src="/pro1.jpg"
+      alt="Profesjonalna profilaktyka stomatologiczna"
+      fill
+      className="object-contain"
+    />
+  </div>
+</div>
           </div>
-
         </div>
       </section>
 
-      {/* KAMIEŃ NAZĘBNY */}
-      <section className="bg-white px-6 py-20 md:px-12 md:py-28">
-        <div className="mx-auto max-w-6xl">
+{/* KAMIEŃ NAZĘBNY */}
+<section className="bg-white px-6 py-20 md:px-12 md:py-28">
+  <div className="mx-auto max-w-6xl">
 
-          <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
+    <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
 
-            {/* LEWA */}
-            <div>
-              <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
-                Skaling
-              </p>
+      {/* LEWA - ZDJĘCIE */}
+      <div className="relative h-[400px] overflow-hidden bg-slate-100 md:h-[500px]">
+        <Image
+          src="/usuwaniekamienia.png"
+          alt="Usuwanie kamienia nazębnego podczas skalingu"
+          fill
+          className="object-cover"
+        />
+      </div>
 
-              <h2 className="font-serif text-3xl font-light md:text-4xl">
-                Usuwanie kamienia nazębnego
-              </h2>
-            </div>
+      {/* PRAWA - TEKST */}
+      <div>
+        <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
+          Skaling
+        </p>
 
-            {/* PRAWA */}
-            <div className="space-y-5 text-sm leading-7 text-slate-500">
+        <h2 className="mb-8 font-serif text-3xl font-light md:text-4xl">
+          Usuwanie kamienia nazębnego
+        </h2>
 
-              <p>
-                Kamień nazębny to zmineralizowana warstwa płytki nazębnej.
-                Osadza się nie tylko na powierzchni zębów, ale również pod
-                dziąsłami, głównie w okolicach szyjek zębowych.
-              </p>
+        <div className="space-y-5 text-sm leading-7 text-slate-500">
 
-              <p>
-                Zabieg polegający na usuwaniu kamienia nazębnego nazywamy
-                skalingiem. Jest to ważny element profesjonalnej higienizacji,
-                ponieważ nagromadzony kamień stanowi miejsce, w którym mogą
-                rozwijać się bakterie odpowiedzialne między innymi za choroby
-                dziąseł i przyzębia.
-              </p>
+          <p>
+            Kamień nazębny to zmineralizowana warstwa płytki nazębnej.
+            Osadza się nie tylko na powierzchni zębów, ale również pod
+            dziąsłami, głównie w okolicach szyjek zębowych.
+          </p>
 
-              <p>
-                Długotrwałe gromadzenie się kamienia może prowadzić do
-                podrażnienia i stanu zapalnego dziąseł, obniżania się ich
-                poziomu, odsłaniania szyjek zębowych oraz zaniku tkanek
-                podtrzymujących zęby. Nieleczone choroby przyzębia mogą
-                z czasem prowadzić do rozchwiania zębów i ich utraty.
-              </p>
+          <p>
+            Zabieg polegający na usuwaniu kamienia nazębnego nazywamy
+            skalingiem. Jest to ważny element profesjonalnej higienizacji,
+            ponieważ nagromadzony kamień stanowi miejsce, w którym mogą
+            rozwijać się bakterie odpowiedzialne między innymi za choroby
+            dziąseł i przyzębia.
+          </p>
 
-              <p>
-                Regularne profesjonalne oczyszczanie zębów pozwala ograniczyć
-                ilość złogów i ułatwia utrzymanie prawidłowej higieny jamy
-                ustnej w domu.
-              </p>
+          <p>
+            Długotrwałe gromadzenie się kamienia może prowadzić do
+            podrażnienia i stanu zapalnego dziąseł, obniżania się ich
+            poziomu, odsłaniania szyjek zębowych oraz zaniku tkanek
+            podtrzymujących zęby. Nieleczone choroby przyzębia mogą
+            z czasem prowadzić do rozchwiania zębów i ich utraty.
+          </p>
 
-            </div>
-
-          </div>
+          <p>
+            Regularne profesjonalne oczyszczanie zębów pozwala ograniczyć
+            ilość złogów i ułatwia utrzymanie prawidłowej higieny jamy
+            ustnej w domu.
+          </p>
 
         </div>
-      </section>
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* RODZAJE SKALINGU */}
       <section className="px-6 py-20 md:px-12 md:py-28">
@@ -301,40 +297,50 @@ export default function ProfilaktykaPage() {
                 skutecznie usuwać zmineralizowane złogi.
               </p>
             </div>
+               <div className="bg-[#1A252F] p-7 md:col-span-2 lg:col-span-1">
+              <span className="text-xl font-light text-blue-400">INFO </span>
 
-          </div>
+              <h3 className="mt-5 text-sm font-semibold uppercase tracking-[0.08em] text-white">
+                Nie wiesz jaka metoda jest dla Ciebie idealna?
+              </h3>
 
-        </div>
-      </section>
-
-      {/* GALERIA - 2 ZDJĘCIA */}
-      <section className="px-6 py-20 md:px-12 md:py-28">
-        <div className="mx-auto max-w-6xl">
-
-          <div className="grid gap-6 md:grid-cols-2">
-
-            <div className="relative h-[360px] overflow-hidden bg-slate-200 md:h-[460px]">
-              <Image
-                src="/pro3.jpg"
-                alt="Profesjonalne oczyszczanie zębów"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div className="relative h-[360px] overflow-hidden bg-slate-200 md:h-[460px]">
-              <Image
-                src="/pro4.jpg"
-                alt="Profilaktyka i higienizacja jamy ustnej"
-                fill
-                className="object-cover"
-              />
+              <p className="mt-3 text-sm leading-6 text-white/50">
+            Skontaktuj się z nami, chętnie pomożemy!
+              </p>
             </div>
 
           </div>
 
         </div>
       </section>
+
+{/* GALERIA - 2 ZDJĘCIA */}
+<section className="px-6 py-20 md:px-12 md:py-28">
+  <div className="mx-auto max-w-6xl">
+
+    <div className="grid gap-6 md:grid-cols-2">
+
+      <div className="relative h-[520px] overflow-hidden bg-slate-100 md:h-[660px]">
+        <Image
+          src="/sss.png"
+          alt="Profesjonalne oczyszczanie zębów"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      <div className="relative h-[520px] overflow-hidden bg-slate-100 md:h-[660px]">
+        <Image
+          src="/sss2.png"
+          alt="Profilaktyka i higienizacja jamy ustnej"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+    </div>
+  </div>
+</section>
 
       {/* USŁUGI */}
       <section className="bg-white px-6 py-20 md:px-12 md:py-28">

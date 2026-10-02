@@ -130,7 +130,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="group flex items-center justify-between border border-slate-200 text-black px-6 py-4 text-[10px] tracking-[0.2em] uppercase font-bold hover:border-blue-700 hover:text-blue-700 transition-all"
               >
-                <span>Odwiedź Facebook</span>
+                <span>Odwiedź nas  na YouTube</span>
                 <span className="group-hover:translate-x-1 transition-transform">
                   ↗
                 </span>

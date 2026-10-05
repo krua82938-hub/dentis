@@ -6,11 +6,11 @@ const priceSections = [
     items: [
       {
         title: 'Przegląd i wizyta kontrolna',
-        price: '50 zł',
+        price: '150,00 zł',
       },
       {
         title: 'Konsultacja wstępna z pisemnym planem leczenia',
-        price: '90 zł',
+        price: '200,00 zł',
       },
       {
         title: 'Przegląd i kontrola dla stałych klientów',
@@ -18,189 +18,184 @@ const priceSections = [
       },
       {
         title: 'Fluoryzacja',
-        price: '100 zł',
+        price: '200,00 zł',
       },
       {
         title: 'Scaling',
-        price: '170 zł',
+        price: '300,00 zł',
       },
       {
         title: 'Piaskowanie',
-        price: '200 zł',
+        price: '300,00 zł',
       },
       {
         title: 'Scaling + piaskowanie',
-        price: '350 zł',
+        price: '550,00 zł',
       },
       {
         title: 'Wybielanie nakładkowe – 1 łuk',
-        price: '800 zł',
+        price: '1 200,00 zł',
       },
       {
         title: 'Wybielanie nakładkowe – 2 łuki',
-        price: '1200 zł',
+        price: '2 000,00 zł',
       },
     ],
   },
+
   {
     title: 'Diagnostyka i RTG',
     items: [
       {
         title: 'Zdjęcie RTG punktowe',
-        price: '40 zł',
+        price: '50,00 zł',
       },
       {
         title: 'Zdjęcie RTG pantograficzne',
-        price: '100 zł',
+        price: '100,00 zł',
       },
       {
         title: 'Zdjęcie RTG cefalometryczne',
-        price: '100 zł',
+        price: '100,00 zł',
       },
       {
         title: 'Zdjęcie RTG zatok szczękowych',
-        price: '100 zł',
+        price: '100,00 zł',
       },
       {
         title: 'Zdjęcie RTG stawów skroniowo-żuchwowych',
-        price: '100 zł',
+        price: '100,00 zł',
       },
       {
         title: 'Zdjęcia tomograficzne 3D',
-        description: 'W zależności od pola obrazowania',
-        price: '300–450 zł',
+        description: 'Zależnie od pola obrazowania',
+        price: '300,00–500,00 zł',
       },
     ],
   },
+
   {
     title: 'Stomatologia zachowawcza',
     items: [
       {
         title: 'Znieczulenie miejscowe',
-        price: 'Bezpłatnie',
+        price: '60,00 zł',
       },
       {
         title: 'Wypełnienie światłoutwardzalne małe / estetyczne – 1 pow.',
-        price: '180 zł',
+        price: '300,00 zł',
       },
       {
         title: 'Wypełnienie światłoutwardzalne średnie / estetyczne – 2–3 pow.',
-        price: '250 zł',
+        price: '400,00 zł',
       },
       {
         title: 'Wypełnienie światłoutwardzalne duże / estetyczne – 4 pow.',
-        price: '380 zł',
+        price: '600,00 zł',
       },
     ],
   },
+
   {
     title: 'Endodoncja',
     items: [
       {
         title: 'Leczenie – ząb 1-kanałowy',
-        price: '400 zł',
+        price: '900,00 zł',
       },
       {
         title: 'Leczenie – ząb 2-kanałowy',
-        price: '600 zł',
+        price: '1 500,00 zł',
       },
       {
         title: 'Leczenie – ząb 3-kanałowy',
-        price: '900 zł',
+        price: '1 900,00 zł',
       },
       {
         title: 'Leczenie – ząb 4-kanałowy',
-        price: '1100 zł',
+        price: '2 200,00 zł',
       },
       {
         title: 'Leczenie pod mikroskopem',
-        price: '150–300 zł',
+        price: '150,00–300,00 zł',
       },
       {
         title: 'Usunięcie złamanego narzędzia',
-        price: '500 zł',
+        price: '800,00 zł',
       },
       {
         title: 'Usunięcie złamanego wkładu koronowo-korzeniowego',
-        price: '350–550 zł',
+        price: '350,00–850,00 zł',
       },
     ],
   },
+
   {
     title: 'Protetyka – konsultacje i uzupełnienia',
     items: [
       {
         title: 'Konsultacja protetyczna z planem leczenia',
-        price: '80 zł',
+        price: '200,00 zł',
       },
       {
         title: 'Naprawa protezy',
-        price: 'od 100 zł',
+        price: 'od 150,00 zł',
       },
       {
         title: 'Wkład koronowy – ceramika',
-        description: 'Cena odbudowy dodatkowo',
-        price: '500 zł + cena odbudowy',
+        price: '1 200,00 zł + cena odbudowy',
       },
       {
         title: 'Wkład koronowy – chrom/kobalt',
-        price: '500 zł',
+        price: '1 200,00 zł',
       },
       {
         title: 'Wkład koronowy – złoto',
-        description: 'Dodatkowo według gramatury złota',
-        price: '500 zł + gramatura złota',
+        price: '1 200,00 zł + gramatura złota',
       },
       {
         title: 'Wkład koronowy – srebro/pallad',
-        description: 'Dodatkowo według gramatury srebra/palladu',
-        price: '500 zł + gramatura',
+        price: '1 200,00 zł + gramatura srebra/palladu',
       },
       {
         title: 'Endokorona',
-        price: '800 zł',
-      },
-      {
-        title: 'Brzeg pełnoceramiczny w koronie',
-        price: '50 zł',
-      },
-      {
-        title: 'Korona tymczasowa',
-        price: 'Wycena w klinice',
+        price: '1 800,00 zł',
       },
     ],
   },
+
   {
     title: 'Korony',
     items: [
       {
-        title: 'Korona porcelanowa na metalu',
-        price: '950 zł',
+        title: 'Korona tymczasowa',
+        price: '400,00 zł',
       },
       {
-        title: 'Korona porcelanowa na tytanie',
-        price: '1000 zł',
+        title: 'Korona porcelanowa na metalu',
+        price: '1 500,00 zł',
       },
       {
         title: 'Korona porcelanowa na złocie',
-        price: '1000 zł + gramatura złota',
+        price: '1 500,00 zł + gramatura złota',
       },
       {
         title: 'Korona cyrkonowa',
-        price: '1500 zł',
+        price: '1 800,00 zł',
       },
     ],
   },
+
   {
     title: 'Protezy',
     items: [
       {
         title: 'Proteza akrylowa',
-        price: '1000 zł',
+        price: '2 500,00 zł',
       },
       {
         title: 'Proteza szkieletowa',
-        price: '2000 zł',
+        price: '3 500,00 zł',
       },
       {
         title: 'Proteza na zatrzaskach, zasuwach, teleskopach',
@@ -208,32 +203,33 @@ const priceSections = [
       },
       {
         title: 'Siatka wzmacniająca standardowa – 1 szt.',
-        price: '150 zł',
+        price: '250,00 zł',
       },
       {
         title: 'Siatka wzmacniająca odlewana – 1 szt.',
-        price: '250 zł',
+        price: '350,00 zł',
       },
       {
         title: 'Zęby kompozytowe – 1 łuk',
-        price: '500 zł',
+        price: '700,00 zł',
       },
       {
         title: 'Akryl wtryskowy – 1 szt.',
-        price: '300 zł',
+        price: '1 000,00 zł',
       },
     ],
   },
+
   {
     title: 'Implantologia',
     items: [
       {
         title: 'Zabieg chirurgiczny',
-        price: '2500–4000 zł',
+        price: '3 000,00–4 700,00 zł',
       },
       {
         title: 'Odbudowa protetyczna',
-        price: '2000–3000 zł',
+        price: '2 500,00–3 000,00 zł',
       },
     ],
   },

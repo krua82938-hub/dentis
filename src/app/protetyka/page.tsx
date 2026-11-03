@@ -66,7 +66,7 @@ export default function ProtetykaPage() {
             {/* PRAWA - ZDJĘCIE */}
             <div className="relative h-[500px] overflow-hidden bg-slate-100 md:h-[620px]">
               <Image
-                src="/den1.jpg"
+                src="/den1.png"
                 alt="Protetyka stomatologiczna Dental Centrum"
                 fill
                 className="object-cover"
@@ -369,7 +369,7 @@ export default function ProtetykaPage() {
 
             <div className="relative min-h-[450px]">
               <Image
-                src="/den1.jpg"
+                src="/den2.png"
                 alt="Pracownia protetyczna Dental Centrum"
                 fill
                 className="object-cover"

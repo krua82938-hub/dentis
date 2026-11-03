@@ -1,3 +1,4 @@
+
 export default function Footer() {
   return (
     <footer className="bg-[#ffffff] text-black pt-20 pb-8 border-t border-slate-100">
@@ -49,9 +50,8 @@ export default function Footer() {
               <p>
                 ul. Inżynierska 19
                 <br />
-                80-298 Gdańsk
+                80-298 Gdańsk, Polska
                 <br />
-                Polska
               </p>
             </div>
 
@@ -88,6 +88,7 @@ export default function Footer() {
                 >
                   +48 883 000 830
                 </a>
+
                 <a
                   href="tel:+48583019780"
                   className="block text-black hover:text-blue-700 transition"
@@ -95,6 +96,15 @@ export default function Footer() {
                   +48 (58) 301 97 80
                 </a>
               </div>
+
+              {/* Współpraca B2B */}
+              <a
+                href="/work.html"
+                className="inline-flex items-center gap-2 text-[10px] tracking-[0.2em] uppercase font-bold text-black hover:text-blue-700 transition"
+              >
+                <span>Współpraca B2B</span>
+                <span className="text-blue-700">↗</span>
+              </a>
 
             </div>
           </div>
@@ -114,15 +124,15 @@ export default function Footer() {
 
             <div className="flex flex-col gap-3">
 
-<a
-  href="tel:+48883000830"
-  className="group flex items-center justify-between bg-black text-white px-6 py-4 text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-blue-700 transition-all"
->
-  <span>Zadzwoń do nas</span>
-  <span className="group-hover:translate-x-1 transition-transform">
-    →
-  </span>
-</a>
+              <a
+                href="tel:+48883000830"
+                className="group flex items-center justify-between bg-black text-white px-6 py-4 text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-blue-700 transition-all"
+              >
+                <span>Zadzwoń do nas</span>
+                <span className="group-hover:translate-x-1 transition-transform">
+                  →
+                </span>
+              </a>
 
               <a
                 href="https://www.facebook.com/profile.php?id=100063661112248"
@@ -130,7 +140,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="group flex items-center justify-between border border-slate-200 text-black px-6 py-4 text-[10px] tracking-[0.2em] uppercase font-bold hover:border-blue-700 hover:text-blue-700 transition-all"
               >
-                <span>Odwiedź nas  na YouTube</span>
+                <span>Odwiedź nas na Facebooku</span>
                 <span className="group-hover:translate-x-1 transition-transform">
                   ↗
                 </span>

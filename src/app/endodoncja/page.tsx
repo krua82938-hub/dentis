@@ -72,7 +72,7 @@ export default function EndodoncjaPage() {
             {/* PRAWA - ZDJĘCIE */}
             <div className="relative h-[500px] overflow-hidden bg-slate-100 md:h-[620px]">
               <Image
-                src="/end1.jpg"
+                src="/end1.png"
                 alt="Leczenie endodontyczne zęba"
                 fill
                 className="object-cover"
@@ -180,7 +180,7 @@ export default function EndodoncjaPage() {
             {/* LEWA - ZDJĘCIE */}
             <div className="relative h-[450px] overflow-hidden bg-white/5 md:h-[580px]">
               <Image
-                src="/end2.jpg"
+                src="/end2.png"
                 alt="Leczenie kanałowe pod mikroskopem"
                 fill
                 className="object-cover"
@@ -395,36 +395,6 @@ export default function EndodoncjaPage() {
 
         </div>
       </section>
-
-      {/* GALERIA */}
-      <section className="px-6 py-20 md:px-12 md:py-28">
-        <div className="mx-auto max-w-6xl">
-
-          <div className="grid gap-6 md:grid-cols-2">
-
-            <div className="relative h-[520px] overflow-hidden bg-slate-100 md:h-[660px]">
-              <Image
-                src="/end4.jpg"
-                alt="Gabinet stomatologiczny - leczenie endodontyczne"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div className="relative h-[520px] overflow-hidden bg-slate-100 md:h-[660px]">
-              <Image
-                src="/end5.jpg"
-                alt="Nowoczesna endodoncja"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="bg-white px-6 py-20 md:px-12 md:py-24">
         <div className="mx-auto max-w-6xl text-center">

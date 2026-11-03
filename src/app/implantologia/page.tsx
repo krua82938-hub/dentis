@@ -14,76 +14,67 @@ export default function ImplantologiaPage() {
       </section>
 
 
-      {/* WSTĘP */}
-      <section className="px-6 py-20 md:px-12 md:py-28">
-        <div className="mx-auto max-w-6xl">
+{/* WSTĘP */}
+<section className="px-6 py-20 md:px-12 md:py-28">
+  <div className="mx-auto max-w-6xl">
 
-          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
+    <div className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
 
-            {/* TEKST */}
-            <div>
+      {/* TEKST */}
+      <div>
 
-              <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
-                Implantologia
-              </p>
+        <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
+          Implantologia
+        </p>
 
-              <h2 className="font-serif text-3xl font-light leading-tight md:text-5xl">
-                Brak zęba można skutecznie uzupełnić
-              </h2>
+        <h2 className="font-serif text-3xl font-light leading-tight md:text-5xl">
+          Brak zęba można skutecznie uzupełnić
+        </h2>
 
-              <div className="mt-7 space-y-5 text-sm leading-7 text-slate-500">
+        <div className="mt-7 space-y-5 text-sm leading-7 text-slate-500">
 
-                <p>
-                  Brak pojedynczego zęba lub większej liczby zębów może
-                  wpływać nie tylko na estetykę uśmiechu, ale również na
-                  komfort podczas jedzenia i funkcjonowanie całego układu
-                  stomatognatycznego.
-                </p>
+          <p>
+            Brak pojedynczego zęba lub większej liczby zębów może
+            wpływać nie tylko na estetykę uśmiechu, ale również na
+            komfort podczas jedzenia i funkcjonowanie całego układu
+            stomatognatycznego.
+          </p>
 
-                <p>
-                  Implantologia jest dziedziną stomatologii zajmującą się
-                  uzupełnianiem braków zębowych przy wykorzystaniu implantów
-                  umieszczanych w kości szczęki lub żuchwy.
-                </p>
+          <p>
+            Implantologia jest dziedziną stomatologii zajmującą się
+            uzupełnianiem braków zębowych przy wykorzystaniu implantów
+            umieszczanych w kości szczęki lub żuchwy.
+          </p>
 
-                <p>
-                  Implant może pełnić funkcję podstawy dla pojedynczej korony,
-                  mostu lub innego uzupełnienia protetycznego. Ostateczny
-                  sposób leczenia dobierany jest indywidualnie po badaniu
-                  pacjenta oraz odpowiedniej diagnostyce.
-                </p>
-
-              </div>
-
-            </div>
-
-            {/* ZDJĘCIA */}
-            <div className="grid gap-5 sm:grid-cols-2">
-
-              <div className="relative h-[320px] overflow-hidden bg-slate-200">
-                <Image
-                  src="/implant1.jpg"
-                  alt="Implantologia stomatologiczna"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="relative h-[320px] overflow-hidden bg-slate-200">
-                <Image
-                  src="/implant2.jpg"
-                  alt="Leczenie implantologiczne"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-            </div>
-
-          </div>
+          <p>
+            Implant może pełnić funkcję podstawy dla pojedynczej korony,
+            mostu lub innego uzupełnienia protetycznego. Ostateczny
+            sposób leczenia dobierany jest indywidualnie po badaniu
+            pacjenta oraz odpowiedniej diagnostyce.
+          </p>
 
         </div>
-      </section>
+
+      </div>
+
+      {/* ZDJĘCIE */}
+      <div className="w-full">
+
+        <div className="relative h-[350px] w-full overflow-hidden bg-slate-200 md:h-[480px]">
+          <Image
+            src="/imp1.jpg"
+            alt="Implantologia stomatologiczna"
+            fill
+            className="object-cover"
+          />
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
 
       {/* CZYM JEST IMPLANT */}
@@ -368,34 +359,34 @@ export default function ImplantologiaPage() {
       </section>
 
 
-      {/* ZDJĘCIA */}
-      <section className="px-6 py-20 md:px-12 md:py-28">
-        <div className="mx-auto max-w-6xl">
+{/* ZDJĘCIA */}
+<section className="px-6 py-14 md:px-12 md:py-16">
+  <div className="mx-auto max-w-6xl">
 
-          <div className="grid gap-6 md:grid-cols-2">
+    <div className="grid gap-6 md:grid-cols-2">
 
-            <div className="relative h-[360px] overflow-hidden bg-slate-200 md:h-[500px]">
-              <Image
-                src="/implant3.jpg"
-                alt="Zabieg implantologiczny"
-                fill
-                className="object-cover"
-              />
-            </div>
+      <div className="relative h-[260px] overflow-hidden bg-slate-200 md:h-[350px]">
+        <Image
+          src="/iii.jpg"
+          alt="Zabieg implantologiczny"
+          fill
+          className="object-cover"
+        />
+      </div>
 
-            <div className="relative h-[360px] overflow-hidden bg-slate-200 md:h-[500px]">
-              <Image
-                src="/implant4.jpg"
-                alt="Nowoczesna implantologia stomatologiczna"
-                fill
-                className="object-cover"
-              />
-            </div>
+      <div className="relative h-[260px] overflow-hidden bg-slate-200 md:h-[350px]">
+        <Image
+          src="/iiii.jpg"
+          alt="Nowoczesna implantologia stomatologiczna"
+          fill
+          className="object-cover"
+        />
+      </div>
 
-          </div>
+    </div>
 
-        </div>
-      </section>
+  </div>
+</section>
 
 
       {/* ODBUDOWA */}
@@ -482,7 +473,7 @@ export default function ImplantologiaPage() {
               </p>
 
               <p className="mt-6 text-2xl font-light text-[#1A252F]">
-                2500–4000 zł
+                3000–4700 zł
               </p>
 
             </div>
@@ -503,7 +494,7 @@ export default function ImplantologiaPage() {
               </p>
 
               <p className="mt-6 text-2xl font-light text-[#1A252F]">
-                2000–3000 zł
+                2500–3000 zł
               </p>
 
             </div>
@@ -527,7 +518,7 @@ export default function ImplantologiaPage() {
 
             <div className="relative min-h-[420px]">
               <Image
-                src="/implant2.jpg"
+                src="/i2i.png"
                 alt="Implantologia Dental Centrum Gdańsk"
                 fill
                 className="object-cover"

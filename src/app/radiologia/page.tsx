@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -6,10 +7,11 @@ export default function RadiologiaPage() {
     <main className="min-h-screen bg-[#F8F9FA] text-[#1A252F]">
 
       {/* HERO */}
-      <section className="bg-[#1A252F] px-6 py-28 md:px-12 md:py-24">
+      <section className="bg-[#1A252F] px-6 py-24 md:px-12 md:py-16">
         <div className="mx-auto max-w-6xl">
+          <div className="mt-10 flex flex-wrap gap-4">
+          </div>
 
-         
         </div>
       </section>
 
@@ -18,13 +20,11 @@ export default function RadiologiaPage() {
       <section className="px-6 py-20 md:px-12 md:py-28">
         <div className="mx-auto max-w-6xl">
 
-          <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
+          <div className="grid gap-12 lg:grid-cols-2 lg:items-center">
 
-            {/* LEWA - TEKST */}
             <div>
-
               <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
-                Diagnostyka
+                Diagnostyka obrazowa
               </p>
 
               <h2 className="font-serif text-3xl font-light leading-tight md:text-5xl">
@@ -32,136 +32,50 @@ export default function RadiologiaPage() {
               </h2>
 
               <div className="mt-7 space-y-5 text-sm leading-7 text-slate-500">
-
                 <p>
-                  Diagnostyka radiologiczna jest ważnym elementem współczesnej
-                  stomatologii. Zdjęcia RTG pozwalają lekarzowi zobaczyć
-                  struktury niewidoczne podczas standardowego badania jamy
-                  ustnej.
+                  Diagnostyka radiologiczna jest ważnym elementem
+                  współczesnej stomatologii. Dzięki badaniom obrazowym
+                  lekarz może ocenić struktury niewidoczne podczas
+                  standardowego badania jamy ustnej.
                 </p>
 
                 <p>
-                  W zależności od sytuacji klinicznej można wykonać zdjęcie
-                  pojedynczego zęba, zdjęcie panoramiczne całego uzębienia
-                  lub tomografię komputerową 3D.
+                  W zależności od sytuacji klinicznej wykonywane są
+                  zdjęcia pojedynczych zębów, zdjęcia panoramiczne
+                  lub tomografia komputerowa CBCT, pozwalająca uzyskać
+                  trójwymiarowy obraz wybranych struktur.
                 </p>
-
-                <ol className="space-y-2 pl-5 text-[#1A252F]">
-                  <li className="pl-2">
-                    <span className="font-medium">1.</span> Rentgen punktowy
-                  </li>
-                  <li className="pl-2">
-                    <span className="font-medium">2.</span> Rentgen panoramiczny
-                  </li>
-                  <li className="pl-2">
-                    <span className="font-medium">3.</span> Tomografia 3D
-                  </li>
-                </ol>
 
                 <p>
-                  Odpowiednie badanie radiologiczne może być wykorzystywane
-                  między innymi podczas leczenia zachowawczego, endodoncji,
-                  chirurgii stomatologicznej, protetyki, ortodoncji
-                  i implantologii.
+                  Rodzaj badania dobierany jest indywidualnie,
+                  z uwzględnieniem wskazań klinicznych oraz informacji
+                  potrzebnych do zaplanowania dalszego leczenia.
                 </p>
-
               </div>
-
             </div>
 
-
-       {/* PRAWA - ZDJĘCIE */}
-{/* PRAWA - ZDJĘCIE */}
-<div className="relative h-[500px] overflow-hidden bg-slate-100 md:h-[600px]">
-  <Image
-    src="/kkkk.png"
-    alt="Diagnostyka radiologiczna w gabinecie stomatologicznym"
-    fill
-    sizes="(max-width: 768px) 100vw, 50vw"
-    className="object-contain"
-  />
-</div>
-
-          </div>
-
-        </div>
-      </section>
-
-
-      {/* RENTGEN PUNKTOWY */}
-      <section className="bg-white px-6 py-20 md:px-12 md:py-28">
-        <div className="mx-auto max-w-6xl">
-
-          <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-
-            {/* LEWA - ZDJĘCIE */}
-            <div className="relative h-[400px] overflow-hidden bg-slate-100 md:h-[500px]">
+            <div className="relative h-[400px] overflow-hidden md:h-[550px]">
               <Image
-                src="/rtg1.jpg"
-                alt="Rentgen punktowy pojedynczego zęba"
+                src="/kkkk.png"
+                alt="Diagnostyka radiologiczna w gabinecie stomatologicznym"
                 fill
-                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                className="object-contain"
               />
             </div>
 
-
-            {/* PRAWA - TEKST */}
-            <div>
-
-              <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
-                RTG punktowe
-              </p>
-
-              <h2 className="mb-8 font-serif text-3xl font-light md:text-4xl">
-                Rentgen punktowy
-              </h2>
-
-              <div className="space-y-5 text-sm leading-7 text-slate-500">
-
-                <p>
-                  Rentgen punktowy pozwala szybko wykonać zdjęcie RTG
-                  pojedynczego zęba. Dzięki niewielkiemu polu obrazowania
-                  badanie charakteryzuje się wysoką szczegółowością obrazu.
-                </p>
-
-                <p>
-                  Zdjęcia wewnątrzustne są wykorzystywane między innymi
-                  podczas diagnostyki przed ekstrakcją zęba oraz w trakcie
-                  leczenia kanałowego.
-                </p>
-
-                <p>
-                  Badanie może być również pomocne w diagnostyce próchnicy
-                  na powierzchniach stycznych, stanów zapalnych miazgi
-                  oraz tkanek znajdujących się w okolicy wierzchołków
-                  korzeni zębów.
-                </p>
-
-                <p>
-                  Zdjęcie pozwala ocenić przebieg korzeni, liczbę kanałów
-                  oraz ich kształt i stopień zakrzywienia. Jest to szczególnie
-                  przydatne podczas planowania i kontroli leczenia
-                  endodontycznego.
-                </p>
-
-              </div>
-
-            </div>
-
           </div>
-
         </div>
       </section>
 
 
-      {/* RODZAJE DIAGNOSTYKI */}
-      <section className="px-6 py-20 md:px-12 md:py-28">
+      {/* RODZAJE BADAŃ */}
+      <section className="bg-white px-6 py-20 md:px-12 md:py-28">
         <div className="mx-auto max-w-6xl">
 
           <div className="mb-12 max-w-2xl">
-
             <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
-              Badania radiologiczne
+              Rodzaje badań
             </p>
 
             <h2 className="font-serif text-3xl font-light md:text-4xl">
@@ -169,22 +83,16 @@ export default function RadiologiaPage() {
             </h2>
 
             <p className="mt-5 text-sm leading-7 text-slate-500">
-              Rodzaj wykonywanego badania zależy od celu diagnostycznego
-              oraz zakresu informacji potrzebnych lekarzowi do zaplanowania
-              dalszego leczenia.
+              Różne rodzaje badań radiologicznych dostarczają
+              odmiennych informacji. Ich wybór zależy od celu
+              diagnostycznego i planowanego leczenia.
             </p>
-
           </div>
-
 
           <div className="grid gap-px border border-slate-200 bg-slate-200 md:grid-cols-3">
 
-            {/* PUNKTOWE */}
-            <div className="bg-white p-8 md:p-10">
-
-              <span className="text-2xl font-light text-blue-700">
-                01
-              </span>
+            <article className="bg-white p-8 md:p-10">
+              <span className="text-2xl font-light text-blue-700">01</span>
 
               <h3 className="mt-6 font-serif text-2xl font-light">
                 RTG punktowe
@@ -192,351 +100,314 @@ export default function RadiologiaPage() {
 
               <p className="mt-5 text-sm leading-7 text-slate-500">
                 Szczegółowy obraz pojedynczego zęba, jego korzeni
-                oraz struktur znajdujących się w jego bezpośrednim
-                otoczeniu.
+                oraz struktur znajdujących się w bezpośrednim otoczeniu.
               </p>
+            </article>
 
-            </div>
-
-
-          {/* PANORAMICZNE */}
-<div className="grid overflow-hidden bg-white md:grid-cols-[1fr_0.9fr]">
-
-  {/* LEWA - TREŚĆ */}
-  <div className="p-8 md:p-10">
-
-    <span className="text-2xl font-light text-blue-700">
-      02
-    </span>
-
-    <h3 className="mt-6 font-serif text-2xl font-light">
-      RTG panoramiczne
-    </h3>
-
-    <p className="mt-5 text-sm leading-7 text-slate-500">
-      Szeroki obraz szczęki, żuchwy, łuków zębowych oraz
-      otaczających je struktur. Pomaga w ocenie ogólnego
-      stanu uzębienia.
-    </p>
-
-  </div>
-</div>
-
-
-            {/* TOMOGRAFIA */}
-            <div className="bg-white p-8 md:p-10">
-
-              <span className="text-2xl font-light text-blue-700">
-                03
-              </span>
+            <article className="bg-white p-8 md:p-10">
+              <span className="text-2xl font-light text-blue-700">02</span>
 
               <h3 className="mt-6 font-serif text-2xl font-light">
-                Tomografia 3D
+                RTG panoramiczne
               </h3>
 
               <p className="mt-5 text-sm leading-7 text-slate-500">
-                Trójwymiarowe obrazowanie struktur anatomicznych
-                pozwalające na ich szczegółową analizę oraz dokładne
-                planowanie leczenia.
+                Szeroki obraz szczęki, żuchwy i łuków zębowych,
+                wykorzystywany w ogólnej ocenie uzębienia.
               </p>
+            </article>
 
-            </div>
+            <article className="bg-white p-8 md:p-10">
+              <span className="text-2xl font-light text-blue-700">03</span>
+
+              <h3 className="mt-6 font-serif text-2xl font-light">
+                Tomografia CBCT 3D
+              </h3>
+
+              <p className="mt-5 text-sm leading-7 text-slate-500">
+                Trójwymiarowe obrazowanie wybranych struktur
+                anatomicznych, pomocne w planowaniu bardziej
+                złożonych procedur stomatologicznych.
+              </p>
+            </article>
 
           </div>
-
         </div>
       </section>
 
 
-     {/* RENTGEN PANORAMICZNY */}
-<section className="bg-[#1A252F] px-6 py-20 md:px-12 md:py-28">
-  <div className="mx-auto max-w-6xl">
-
-    <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-
-      {/* LEWA - TEKST */}
-      <div>
-
-        <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-400">
-          Pantomografia
-        </p>
-
-        <h2 className="font-serif text-3xl font-light text-white md:text-4xl">
-          Rentgen panoramiczny
-        </h2>
-
-        <div className="mt-7 space-y-5 text-sm leading-7 text-white/60">
-
-          <p>
-            Rentgen panoramiczny, czyli pantomografia, pozwala uzyskać
-            szeroki obraz szczęki, żuchwy, łuków zębowych oraz struktur
-            znajdujących się w ich otoczeniu.
-          </p>
-
-          <p>
-            Badanie jest wykorzystywane w wielu dziedzinach
-            stomatologii. Może być pomocne między innymi w diagnostyce
-            ogólnego stanu uzębienia, planowaniu leczenia
-            ortodontycznego, protetycznego i chirurgicznego.
-          </p>
-
-          <p>
-            Zdjęcie panoramiczne może również dostarczyć informacji
-            potrzebnych przed usunięciem niewyrośniętych zębów,
-            w diagnostyce chorób przyzębia oraz podczas planowania
-            leczenia implantologicznego.
-          </p>
-
-          <p>
-            Na podstawie wykonanego zdjęcia lekarz może zdecydować,
-            czy konieczne jest przeprowadzenie bardziej szczegółowej
-            diagnostyki.
-          </p>
-
-        </div>
-
-      </div>
-
-      {/* PRAWA - ZDJĘCIE */}
-      <div className="relative h-[420px] overflow-hidden bg-slate-800 md:h-[520px]">
-        <Image
-          src="/foto2.png"
-          alt="Rentgen panoramiczny zębów"
-          fill
-          className="object-contain"
-          sizes="(max-width: 1024px) 100vw, 50vw"
-        />
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-
-      {/* ZASTOSOWANIE PANORAMY */}
+      {/* RTG PUNKTOWE */}
       <section className="px-6 py-20 md:px-12 md:py-28">
         <div className="mx-auto max-w-6xl">
 
-          <div className="mb-12 max-w-2xl">
+          <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
 
-            <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
-              Zastosowanie
-            </p>
-
-            <h2 className="font-serif text-3xl font-light md:text-4xl">
-              Kiedy wykonuje się zdjęcie panoramiczne?
-            </h2>
-
-          </div>
-
-
-          <div className="grid gap-px border border-slate-200 bg-slate-200 md:grid-cols-2 lg:grid-cols-4">
-
-            <div className="bg-white p-7">
-
-              <span className="text-xl font-light text-blue-700">
-                01
-              </span>
-
-              <h3 className="mt-5 text-sm font-semibold uppercase tracking-[0.08em]">
-                Ortodoncja
-              </h3>
-
-              <p className="mt-3 text-sm leading-6 text-slate-500">
-                Ocena uzębienia przed rozpoczęciem leczenia
-                ortodontycznego.
-              </p>
-
+            <div className="relative h-[400px] overflow-hidden bg-slate-100 md:h-[500px]">
+              <Image
+                src="/rtg1.jpg"
+                alt="Rentgen punktowy pojedynczego zęba"
+                fill
+                sizes="(max-width: 1024px) 100vw, 45vw"
+                className="object-contain"
+              />
             </div>
 
-
-            <div className="bg-white p-7">
-
-              <span className="text-xl font-light text-blue-700">
-                02
-              </span>
-
-              <h3 className="mt-5 text-sm font-semibold uppercase tracking-[0.08em]">
-                Chirurgia
-              </h3>
-
-              <p className="mt-3 text-sm leading-6 text-slate-500">
-                Pomoc w ocenie położenia zębów wymagających
-                leczenia chirurgicznego.
+            <div>
+              <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
+                01 · RTG punktowe
               </p>
 
-            </div>
+              <h2 className="font-serif text-3xl font-light md:text-4xl">
+                Szczegółowy obraz pojedynczego zęba
+              </h2>
 
+              <div className="mt-7 space-y-5 text-sm leading-7 text-slate-500">
+                <p>
+                  Rentgen punktowy pozwala uzyskać szczegółowy obraz
+                  pojedynczego zęba oraz tkanek znajdujących się
+                  w jego bezpośrednim otoczeniu.
+                </p>
 
-            <div className="bg-white p-7">
+                <p>
+                  Badanie jest wykorzystywane między innymi podczas
+                  diagnostyki próchnicy, leczenia kanałowego oraz
+                  oceny zmian w okolicy wierzchołków korzeni.
+                </p>
 
-              <span className="text-xl font-light text-blue-700">
-                03
-              </span>
+                <p>
+                  Zdjęcie może dostarczyć informacji o przebiegu
+                  korzeni, anatomii kanałów oraz stanie tkanek
+                  okołowierzchołkowych.
+                </p>
 
-              <h3 className="mt-5 text-sm font-semibold uppercase tracking-[0.08em]">
-                Implantologia
-              </h3>
-
-              <p className="mt-3 text-sm leading-6 text-slate-500">
-                Wstępna ocena struktur kostnych przed planowaniem
-                leczenia implantologicznego.
-              </p>
-
-            </div>
-
-
-            <div className="bg-white p-7">
-
-              <span className="text-xl font-light text-blue-700">
-                04
-              </span>
-
-              <h3 className="mt-5 text-sm font-semibold uppercase tracking-[0.08em]">
-                Protetyka
-              </h3>
-
-              <p className="mt-3 text-sm leading-6 text-slate-500">
-                Dodatkowe informacje pomocne przy planowaniu
-                leczenia protetycznego.
-              </p>
-
+                <p>
+                  Jest również pomocne podczas kontroli wybranych
+                  etapów leczenia endodontycznego.
+                </p>
+              </div>
             </div>
 
           </div>
-
         </div>
       </section>
 
-   
+
+      {/* RTG PANORAMICZNE */}
+      <section className="bg-[#1A252F] px-6 py-20 md:px-12 md:py-28">
+        <div className="mx-auto max-w-6xl">
+
+          <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
+
+            <div>
+              <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-400">
+                02 · Pantomografia
+              </p>
+
+              <h2 className="font-serif text-3xl font-light text-white md:text-4xl">
+                Szeroki obraz uzębienia
+              </h2>
+
+              <div className="mt-7 space-y-5 text-sm leading-7 text-white/60">
+                <p>
+                  Rentgen panoramiczny, czyli pantomografia,
+                  umożliwia uzyskanie szerokiego obrazu szczęki,
+                  żuchwy, łuków zębowych oraz wybranych struktur
+                  znajdujących się w ich otoczeniu.
+                </p>
+
+                <p>
+                  Badanie może być pomocne w ocenie ogólnego stanu
+                  uzębienia, diagnostyce zębów zatrzymanych oraz
+                  planowaniu leczenia ortodontycznego i chirurgicznego.
+                </p>
+
+                <p>
+                  Pantomografia dostarcza również informacji
+                  wykorzystywanych podczas wstępnego planowania
+                  leczenia implantologicznego i protetycznego.
+                </p>
+
+                <p>
+                  W razie potrzeby lekarz może zalecić dodatkowe,
+                  bardziej szczegółowe badanie obrazowe.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative h-[400px] overflow-hidden bg-slate-800 md:h-[520px]">
+              <Image
+                src="/foto2.png"
+                alt="Rentgen panoramiczny zębów"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-contain"
+              />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      {/* TOMOGRAFIA 3D */}
+      <section className="px-6 py-20 md:px-12 md:py-28">
+        <div className="mx-auto max-w-6xl">
+
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+
+            <div className="relative h-[400px] overflow-hidden bg-slate-100 md:h-[520px]">
+              <Image
+                src="/rtg3.jpg"
+                alt="Tomografia komputerowa CBCT 3D"
+                fill
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
+            </div>
+
+            <div>
+              <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
+                03 · Tomografia CBCT
+              </p>
+
+              <h2 className="font-serif text-3xl font-light leading-tight md:text-5xl">
+                Diagnostyka w trzech wymiarach
+              </h2>
+
+              <div className="mt-7 space-y-5 text-sm leading-7 text-slate-500">
+                <p>
+                  Tomografia komputerowa CBCT umożliwia uzyskanie
+                  trójwymiarowego obrazu wybranych struktur
+                  anatomicznych w obrębie jamy ustnej i twarzoczaszki.
+                </p>
+
+                <p>
+                  W przeciwieństwie do klasycznych zdjęć
+                  dwuwymiarowych pozwala analizować struktury
+                  z różnych perspektyw i dokładniej oceniać
+                  ich wzajemne położenie.
+                </p>
+
+                <p>
+                  Badanie może być szczególnie przydatne w planowaniu
+                  implantów, zabiegów chirurgicznych oraz w diagnostyce
+                  wybranych złożonych przypadków endodontycznych.
+                </p>
+
+                <p>
+                  Zakres obrazowania oraz wskazania do tomografii
+                  ustalane są indywidualnie, zgodnie z potrzebami
+                  diagnostycznymi pacjenta.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
 
 
       {/* ZASTOSOWANIE TOMOGRAFII */}
-      <section className="px-6 py-20 md:px-12 md:py-28">
+      <section className="bg-white px-6 py-20 md:px-12 md:py-28">
         <div className="mx-auto max-w-6xl">
 
           <div className="mb-12 max-w-2xl">
-
             <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
-              Tomografia
+              Zastosowanie CBCT
             </p>
 
             <h2 className="font-serif text-3xl font-light md:text-4xl">
-              Precyzyjna diagnostyka w trzech wymiarach
+              Kiedy tomografia może być pomocna?
             </h2>
 
             <p className="mt-5 text-sm leading-7 text-slate-500">
-              Obrazowanie 3D dostarcza szczegółowych informacji, które mogą
-              być pomocne przy planowaniu bardziej złożonych procedur
-              stomatologicznych.
+              Trójwymiarowe obrazowanie dostarcza dodatkowych
+              informacji, które mogą mieć znaczenie podczas
+              planowania wybranych procedur stomatologicznych.
             </p>
-
           </div>
 
+          <div className="grid gap-px border border-slate-200 bg-slate-200 md:grid-cols-2">
 
-          <div className="grid gap-6 md:grid-cols-2">
-
-            <article className="border border-slate-200 bg-white p-8 md:p-10">
-
-              <span className="text-2xl font-light text-blue-700">
-                01
-              </span>
+            <article className="bg-white p-8 md:p-10">
+              <span className="text-2xl font-light text-blue-700">01</span>
 
               <h3 className="mt-6 font-serif text-2xl font-light">
-                Planowanie implantów
+                Implantologia
               </h3>
 
               <p className="mt-5 text-sm leading-7 text-slate-500">
-                Tomografia pozwala dokładnie ocenić warunki anatomiczne
-                w miejscu planowanego wszczepienia implantu i ułatwia
-                przygotowanie odpowiedniego planu leczenia.
+                Ocena warunków kostnych i położenia ważnych struktur
+                anatomicznych przed planowaniem wszczepienia implantu.
               </p>
-
             </article>
 
-
-            <article className="border border-slate-200 bg-white p-8 md:p-10">
-
-              <span className="text-2xl font-light text-blue-700">
-                02
-              </span>
+            <article className="bg-white p-8 md:p-10">
+              <span className="text-2xl font-light text-blue-700">02</span>
 
               <h3 className="mt-6 font-serif text-2xl font-light">
                 Chirurgia stomatologiczna
               </h3>
 
               <p className="mt-5 text-sm leading-7 text-slate-500">
-                Trójwymiarowy obraz pozwala dokładniej zobrazować położenie
-                zębów oraz ich relację względem ważnych struktur
-                anatomicznych.
+                Dokładniejsza analiza położenia zębów zatrzymanych
+                oraz ich relacji względem struktur anatomicznych.
               </p>
-
             </article>
 
-
-            <article className="border border-slate-200 bg-white p-8 md:p-10">
-
-              <span className="text-2xl font-light text-blue-700">
-                03
-              </span>
+            <article className="bg-white p-8 md:p-10">
+              <span className="text-2xl font-light text-blue-700">03</span>
 
               <h3 className="mt-6 font-serif text-2xl font-light">
                 Endodoncja
               </h3>
 
               <p className="mt-5 text-sm leading-7 text-slate-500">
-                W wybranych przypadkach obrazowanie 3D może pomóc
-                w dokładniejszej ocenie anatomii kanałów korzeniowych
-                oraz zmian w okolicy wierzchołków korzeni.
+                Dodatkowa ocena anatomii korzeni i kanałów
+                w wybranych, bardziej złożonych przypadkach
+                leczenia kanałowego.
               </p>
-
             </article>
 
-
-            <article className="border border-slate-200 bg-white p-8 md:p-10">
-
-              <span className="text-2xl font-light text-blue-700">
-                04
-              </span>
+            <article className="bg-white p-8 md:p-10">
+              <span className="text-2xl font-light text-blue-700">04</span>
 
               <h3 className="mt-6 font-serif text-2xl font-light">
-                Złożone przypadki
+                Diagnostyka złożonych przypadków
               </h3>
 
               <p className="mt-5 text-sm leading-7 text-slate-500">
-                Szczegółowe obrazowanie może być pomocne wtedy, gdy
-                standardowe zdjęcia nie pozwalają uzyskać wszystkich
-                informacji potrzebnych do postawienia diagnozy.
+                Szczegółowe obrazowanie w sytuacjach, w których
+                standardowe badania nie dostarczają wystarczających
+                informacji diagnostycznych.
               </p>
-
             </article>
 
           </div>
-
         </div>
       </section>
-      {/* ZDJĘCIE + TEKST */}
+
+
+      {/* PODSUMOWANIE */}
       <section className="px-6 py-20 md:px-12 md:py-28">
         <div className="mx-auto max-w-6xl">
 
           <div className="grid overflow-hidden bg-white lg:grid-cols-2">
 
-            <div className="relative min-h-[400px]">
+            <div className="relative min-h-[400px] bg-slate-100">
               <Image
-                src="/rtg3.jpg"
-                alt="Tomografia 3D Dental Centrum"
+                src="/kkkk.png"
+                alt="Diagnostyka obrazowa Dental Centrum"
                 fill
-                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-contain"
               />
             </div>
 
             <div className="flex items-center p-8 md:p-12 lg:p-16">
-
               <div>
-
                 <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
-                  Diagnostyka Dental Centrum
+                  Dental Centrum · Gdańsk
                 </p>
 
                 <h2 className="mt-4 font-serif text-3xl font-light md:text-4xl">
@@ -544,16 +415,16 @@ export default function RadiologiaPage() {
                 </h2>
 
                 <p className="mt-5 text-sm leading-7 text-slate-500">
-                  Zakres diagnostyki radiologicznej dobierany jest
-                  odpowiednio do sytuacji klinicznej. Zdjęcie punktowe,
-                  panoramiczne lub tomografia 3D dostarczają różnych
-                  informacji potrzebnych podczas planowania leczenia.
+                  Diagnostyka radiologiczna i tomografia stanowią
+                  ważne wsparcie w planowaniu leczenia stomatologicznego.
+                  Dobór odpowiedniego badania pozwala uzyskać
+                  informacje niezbędne do oceny konkretnego problemu.
                 </p>
 
                 <p className="mt-4 text-sm leading-7 text-slate-500">
-                  Dokładna diagnostyka pozwala lekarzowi lepiej ocenić
-                  stan uzębienia i otaczających struktur oraz zaplanować
-                  kolejne etapy postępowania.
+                  O rodzaju diagnostyki decyduje lekarz,
+                  uwzględniając wskazania kliniczne oraz
+                  indywidualną sytuację pacjenta.
                 </p>
 
                 <Link
@@ -562,38 +433,34 @@ export default function RadiologiaPage() {
                 >
                   Umów wizytę
                 </Link>
-
               </div>
-
             </div>
 
           </div>
-
         </div>
       </section>
 
 
       {/* CTA */}
-      <section className="bg-white px-6 py-20 md:px-12 md:py-24">
+      <section className="bg-[#1A252F] px-6 py-20 md:px-12 md:py-24">
         <div className="mx-auto max-w-6xl text-center">
 
-          <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-blue-700">
+          <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-blue-400">
             Dental Centrum · Gdańsk
           </p>
 
-          <h2 className="mt-4 font-serif text-3xl font-light md:text-4xl">
+          <h2 className="mt-4 font-serif text-3xl font-light text-white md:text-5xl">
             Precyzyjna diagnostyka stomatologiczna
           </h2>
 
-          <p className="mx-auto mt-5 max-w-xl text-sm leading-7 text-slate-500">
-            Dowiedz się, jakie badanie radiologiczne może być potrzebne
-            do dokładnej oceny stanu zdrowia jamy ustnej i zaplanowania
-            dalszego leczenia.
+          <p className="mx-auto mt-6 max-w-xl text-sm leading-7 text-white/60">
+            Skontaktuj się z nami i dowiedz się, jakie badanie
+            może być odpowiednie w Twojej sytuacji.
           </p>
 
           <Link
             href="/kontakt"
-            className="mt-8 inline-flex bg-[#1A252F] px-8 py-4 text-[10px] font-bold uppercase tracking-[0.2em] text-white transition hover:bg-blue-700"
+            className="mt-8 inline-flex bg-white px-8 py-4 text-[10px] font-bold uppercase tracking-[0.2em] text-[#1A252F] transition hover:bg-blue-600 hover:text-white"
           >
             Umów konsultację
           </Link>

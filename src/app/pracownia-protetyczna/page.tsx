@@ -63,28 +63,17 @@ export default function PracowniaProtetycznaPage() {
             </div>
 
 
-            {/* ZDJĘCIA */}
-            <div className="grid gap-5 sm:grid-cols-2">
-
-              <div className="relative h-[300px] overflow-hidden bg-slate-200 md:h-[380px]">
-                <Image
-                  src="/prot1.jpg"
-                  alt="Pracownia protetyczna Dental Centrum"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-              <div className="relative h-[300px] overflow-hidden bg-slate-200 md:h-[380px]">
-                <Image
-                  src="/prot2.jpg"
-                  alt="Laboratorium protetyczne Dental Centrum"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-
-            </div>
+{/* ZDJĘCIE */}
+<div className="w-full">
+  <div className="relative h-[380px] w-full overflow-hidden bg-slate-200 md:h-[480px]">
+    <Image
+      src="/81.jpg"
+      alt="Pracownia protetyczna Dental Centrum"
+      fill
+      className="object-cover"
+    />
+  </div>
+</div>
 
           </div>
 
@@ -403,37 +392,6 @@ export default function PracowniaProtetycznaPage() {
         </div>
       </section>
 
-
-      {/* ZDJĘCIA */}
-      <section className="px-6 py-20 md:px-12 md:py-28">
-        <div className="mx-auto max-w-6xl">
-
-          <div className="grid gap-6 md:grid-cols-2">
-
-            <div className="relative h-[360px] overflow-hidden bg-slate-200 md:h-[500px]">
-              <Image
-                src="/prot3.jpg"
-                alt="Prace protetyczne Dental Centrum"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-            <div className="relative h-[360px] overflow-hidden bg-slate-200 md:h-[500px]">
-              <Image
-                src="/prot4.jpg"
-                alt="Laboratorium protetyczne"
-                fill
-                className="object-cover"
-              />
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-
       {/* WSPÓŁPRACA */}
       <section className="bg-white px-6 py-20 md:px-12 md:py-28">
         <div className="mx-auto max-w-6xl">
@@ -494,7 +452,7 @@ export default function PracowniaProtetycznaPage() {
             <div className="relative min-h-[450px] overflow-hidden bg-slate-200">
 
               <Image
-                src="/prot2.jpg"
+                src="/121212.jpg"
                 alt="Pracownia protetyczna Dental Centrum"
                 fill
                 className="object-cover"

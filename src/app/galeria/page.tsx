@@ -2,27 +2,27 @@ import Image from 'next/image';
 
 const galleryItems = [
   {
-    src: '/gallery/1.jpg',
+    src: '/1234.jpg',
     alt: 'Gabinet stomatologiczny',
   },
   {
-    src: '/gallery/2.jpg',
+    src: '/12345.jpg',
     alt: 'Nowoczesny gabinet Dental Centrum',
   },
   {
-    src: '/gallery/3.jpg',
+    src: '/123456.jpg',
     alt: 'Wyposażenie gabinetu',
   },
   {
-    src: '/gallery/4.jpg',
+    src: '/1234567.jpg',
     alt: 'Przestrzeń Dental Centrum',
   },
   {
-    src: '/gallery/5.jpg',
+    src: '/12345678.jpg',
     alt: 'Gabinet stomatologiczny',
   },
   {
-    src: '/gallery/6.jpg',
+    src: '/123456789.jpg',
     alt: 'Dental Centrum Gdańsk',
   },
 ];

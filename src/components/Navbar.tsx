@@ -1,6 +1,7 @@
+
 "use client";
 
-import { Phone, Calendar, Menu, X, ChevronDown } from 'lucide-react';
+import { Phone, Menu, X, ChevronDown } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -10,35 +11,19 @@ export default function Navbar() {
   const [mobileOfferOpen, setMobileOfferOpen] = useState(false);
 
   const offerLinks = [
-    { name: 'Profilaktyka', href: 'profilaktyka' },
-    { name: 'Radiologia', href: 'radiologia' },
-    { name: 'Tomografia', href: 'tomografia' },
-    { name: 'Endodoncja', href: 'endodoncja' },
-    { name: 'Protetyka', href: 'protetyka' },
-    { name: 'Implantologia', href: 'implantologia' },
+    { name: 'Profilaktyka', href: '/profilaktyka' },
+    { name: 'Radiologia i tomografia', href: '/radiologia' },
+    { name: 'Endodoncja', href: '/endodoncja' },
+    { name: 'Protetyka', href: '/protetyka' },
+    { name: 'Implantologia', href: '/implantologia' },
   ];
 
   const mainLinks = [
-    {
-      name: 'O Firmie',
-      href: '/o-firmie',
-    },
-    {
-      name: 'Cennik',
-      href: '/cennik',
-    },
-    {
-      name: 'Galeria',
-      href: '/galeria',
-    },
-    {
-      name: 'Kontakt',
-      href: '/kontakt',
-    },
-    {
-      name: 'Pracownia Protetyczna',
-      href: '/pracownia-protetyczna',
-    },
+    { name: 'O Firmie', href: '/o-firmie' },
+    { name: 'Cennik', href: '/cennik' },
+    { name: 'Galeria', href: '/galeria' },
+    { name: 'Kontakt', href: '/kontakt' },
+    { name: 'Pracownia Protetyczna', href: '/pracownia-protetyczna' },
   ];
 
   return (
@@ -48,7 +33,6 @@ export default function Navbar() {
       <div className="flex justify-end px-6 md:px-12 py-3 text-[10px] tracking-[0.25em] uppercase border-b border-white/10 backdrop-blur-md bg-black/5 font-medium text-white/90">
         <div className="flex items-center gap-5">
 
-          {/* Numer 1 */}
           <a
             href="tel:+48883000830"
             className="flex items-center gap-2 hover:text-white transition-colors"
@@ -59,7 +43,6 @@ export default function Navbar() {
 
           <span className="text-white/30">|</span>
 
-          {/* Numer 2 */}
           <a
             href="tel:+48583019780"
             className="flex items-center gap-2 hover:text-white transition-colors"
@@ -95,7 +78,7 @@ export default function Navbar() {
             onMouseLeave={() => setOfferOpen(false)}
           >
             <Link
-              href="/oferta"
+              href="/#uslugi"
               className="flex items-center gap-1.5 text-white/85 hover:text-white text-[10px] tracking-[0.18em] uppercase font-medium transition-colors py-3"
             >
               Oferta
@@ -117,7 +100,7 @@ export default function Navbar() {
                   : 'opacity-0 invisible -translate-y-2'
               }`}
             >
-              <div className="w-56 bg-white shadow-2xl border border-slate-100 py-2">
+              <div className="w-64 bg-white shadow-2xl border border-slate-100 py-2">
 
                 {offerLinks.map((item) => (
                   <Link
@@ -146,14 +129,13 @@ export default function Navbar() {
             </Link>
           ))}
 
-          {/* Appointment */}
-          <a
-            href="tel:+48883000830"
+          {/* Współpraca B2B */}
+          <Link
+            href="/wspolpracab2b"
             className="ml-1 flex items-center gap-2 px-5 py-3 bg-white text-black text-[9px] tracking-[0.18em] uppercase font-bold hover:bg-blue-700 hover:text-white transition-all whitespace-nowrap"
           >
-            <Calendar size={14} strokeWidth={1.5} />
-            Umów wizytę
-          </a>
+            Współpraca protetyczna [B2B]
+          </Link>
 
         </div>
 
@@ -169,6 +151,7 @@ export default function Navbar() {
           </a>
 
           <button
+            type="button"
             onClick={() => setMobileOpen(!mobileOpen)}
             className="text-white"
             aria-label="Menu"
@@ -208,6 +191,7 @@ export default function Navbar() {
           <div className="border-b border-white/10">
 
             <button
+              type="button"
               onClick={() => setMobileOfferOpen(!mobileOfferOpen)}
               className="w-full flex items-center justify-between py-4 text-[10px] tracking-[0.25em] uppercase text-white/80 hover:text-white"
             >
@@ -226,7 +210,7 @@ export default function Navbar() {
             <div
               className={`overflow-hidden transition-all duration-300 ${
                 mobileOfferOpen
-                  ? 'max-h-[500px] opacity-100 pb-3'
+                  ? 'max-h-[600px] opacity-100 pb-3'
                   : 'max-h-0 opacity-0'
               }`}
             >
@@ -234,7 +218,10 @@ export default function Navbar() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  onClick={() => setMobileOpen(false)}
+                  onClick={() => {
+                    setMobileOpen(false);
+                    setMobileOfferOpen(false);
+                  }}
                   className="block py-3 pl-4 text-[9px] tracking-[0.18em] uppercase text-white/50 hover:text-white transition"
                 >
                   {item.name}
@@ -256,11 +243,20 @@ export default function Navbar() {
             </Link>
           ))}
 
+          {/* Współpraca B2B */}
+          <Link
+            href="/work.html"
+            onClick={() => setMobileOpen(false)}
+            className="mt-6 flex items-center justify-center bg-white text-[#1A252F] py-4 text-[10px] tracking-[0.2em] uppercase font-bold hover:bg-blue-700 hover:text-white transition"
+          >
+            Współpraca protetyczna [B2B]
+          </Link>
+
           {/* Appointment */}
           <a
             href="tel:+48883000830"
             onClick={() => setMobileOpen(false)}
-            className="mt-6 flex items-center justify-center gap-3 bg-white text-black py-4 text-[10px] tracking-[0.25em] uppercase font-bold hover:bg-blue-700 hover:text-white transition"
+            className="mt-3 flex items-center justify-center gap-3 border border-white/20 text-white py-4 text-[10px] tracking-[0.25em] uppercase font-bold hover:bg-white hover:text-black transition"
           >
             <Phone size={15} strokeWidth={1.5} />
             Umów wizytę

@@ -180,7 +180,7 @@ export default function EndodoncjaPage() {
             {/* LEWA - ZDJĘCIE */}
             <div className="relative h-[450px] overflow-hidden bg-white/5 md:h-[580px]">
               <Image
-                src="/end2.png"
+                src="/tyty.png"
                 alt="Leczenie kanałowe pod mikroskopem"
                 fill
                 className="object-cover"

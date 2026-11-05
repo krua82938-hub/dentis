@@ -75,10 +75,10 @@ export default function Footer() {
             <div className="space-y-4 text-sm font-light">
 
               <a
-                href="mailto:biuro@dentalcentrum.net"
+                href="mailto:rrachubka@gmail.com "
                 className="block text-slate-600 hover:text-black transition"
               >
-                biuro@dentalcentrum.net
+                rrachubka@gmail.com 
               </a>
 
               <div className="space-y-2">

@@ -236,7 +236,137 @@ export default function WspolpracaB2BPage() {
         </div>
       </section>
 
+{/* ZESPÓŁ DENTAL CENTRUM */}
 
+<section className="w-full bg-[#fbfaf7] py-20 md:py-28">
+  <div className={styles.sectionContainer}>
+
+    {/* NAGŁÓWEK */}
+    <div className="mb-14 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+      <div>
+        <span className={styles.sectionLabel}>
+          DENTAL CENTRUM / NASZ ZESPÓŁ
+        </span>
+
+        <h2 className="mt-5 max-w-3xl font-serif text-4xl font-light leading-tight text-[#233b38] md:text-5xl lg:text-6xl">
+          Doświadczenie,
+          <em className="block text-[#ad795e]">
+            które buduje zaufanie.
+          </em>
+        </h2>
+      </div>
+
+      <p className="max-w-xl text-base leading-8 text-[#77736d] lg:justify-self-end">
+        Za Dental Centrum stoją lekarze, dla których ważne są
+        jakość leczenia, indywidualne podejście oraz dobra
+        komunikacja z pacjentami i partnerami.
+      </p>
+    </div>
+
+    {/* LEKARZE */}
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+
+      {/* LEKARZ 1 */}
+<article className="grid overflow-hidden bg-white md:grid-cols-[1.1fr_1.5fr]">
+        <div className="relative min-h-[380px] overflow-hidden bg-[#e9e6df] md:min-h-[480px]">
+          <Image
+            src="/lekarz1.jpg"
+            alt="Lekarz Dental Centrum"
+            fill
+            sizes="(max-width: 768px) 100vw, 45vw"
+            className="object-cover object-center"
+          />
+        </div>
+
+        <div className="flex flex-col justify-between p-7 md:p-9">
+          <div>
+            <span className="text-xs tracking-[0.2em] text-[#ad795e]">
+              DENTAL CENTRUM
+            </span>
+
+            <h3 className="mt-5 font-serif text-3xl font-light leading-tight text-[#233b38]">
+              Rafał Rachubka
+            </h3>
+
+            <p className="mt-3 text-sm tracking-wide text-[#ad795e]">
+              Lekarz dentysta
+            </p>
+
+            <div className="mt-7 h-px w-12 bg-[#ad795e]" />
+
+            <p className="mt-7 text-sm leading-7 text-[#77736d]">
+              Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis 
+            </p>
+          </div>
+
+          <div className="mt-9 border-t border-[#eeeae3] pt-6">
+            <p className="text-xs tracking-[0.16em] text-[#99938a]">
+              KONTAKT
+            </p>
+
+            <a
+              href="tel:+48583019780"
+              className="mt-3 inline-block text-sm text-[#233b38] transition hover:text-[#ad795e]"
+            >
+              +48 792 481 555
+            </a>
+          </div>
+        </div>
+      </article>
+
+      {/* LEKARZ 2 */}
+      <article className="grid overflow-hidden bg-white md:grid-cols-[0.9fr_1.1fr]">
+
+{/* ZDJĘCIE LEKARZA 2 */}
+<div className="relative min-h-[380px] overflow-hidden md:min-h-[480px]">
+  <Image
+    src="/lekarz2.jpg"
+    alt="Lekarz Dental Centrum"
+    fill
+    sizes="(max-width: 768px) 100vw, 45vw"
+    className="object-contain object-center"
+  />
+</div>
+
+        <div className="flex flex-col justify-between p-7 md:p-9">
+          <div>
+            <span className="text-xs tracking-[0.2em] text-[#ad795e]">
+              DENTAL CENTRUM
+            </span>
+
+            <h3 className="mt-5 font-serif text-3xl font-light leading-tight text-[#233b38]">
+               Aleksandra Rachubka
+            </h3>
+
+            <p className="mt-3 text-sm tracking-wide text-[#ad795e]">
+              Lekarz dentysta
+            </p>
+
+            <div className="mt-7 h-px w-12 bg-[#ad795e]" />
+
+            <p className="mt-7 text-sm leading-7 text-[#77736d]">
+              Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis 
+            </p>
+          </div>
+
+          <div className="mt-9 border-t border-[#eeeae3] pt-6">
+            <p className="text-xs tracking-[0.16em] text-[#99938a]">
+              KONTAKT
+            </p>
+
+            <a
+              href="tel:+48583019780"
+              className="mt-3 inline-block text-sm text-[#233b38] transition hover:text-[#ad795e]"
+            >
+              +48 792 667 335 
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
       {/* ZAKRES WSPÓŁPRACY */}
 
       <section className={styles.scope} id="zakres">

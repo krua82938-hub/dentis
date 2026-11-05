@@ -99,7 +99,7 @@ export default function KontaktPage() {
 
   {/* E-mail */}
   <a
-    href="mailto:kontakt@dentalcentrum.net"
+    href="mailto:rrachubka@gmail.com "
     className="group flex items-center gap-5"
   >
     <div className="flex h-12 w-12 items-center justify-center border border-slate-200 bg-white transition group-hover:border-[#17232D]">
@@ -112,7 +112,7 @@ export default function KontaktPage() {
       </p>
 
       <p className="text-sm font-medium">
-        kontakt@dentalcentrum.net
+        rrachubka@gmail.com 
       </p>
     </div>
 

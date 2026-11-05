@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 
 const galleryItems = [
@@ -25,6 +26,18 @@ const galleryItems = [
     src: '/123456789.jpg',
     alt: 'Dental Centrum Gdańsk',
   },
+  {
+    src: '/wne1.jpg',
+    alt: 'Wnętrze kliniki Dental Centrum',
+  },
+  {
+    src: '/wne2.jpg',
+    alt: 'Nowoczesne wyposażenie gabinetu',
+  },
+  {
+    src: '/wne3.jpg',
+    alt: 'Przestrzeń kliniki stomatologicznej',
+  },
 ];
 
 export default function GaleriaPage() {
@@ -34,7 +47,6 @@ export default function GaleriaPage() {
       {/* HERO */}
       <section className="bg-[#1A252F] px-6 py-32 md:px-12 md:py-40">
         <div className="mx-auto max-w-6xl">
-
           <p className="mb-5 text-[10px] font-medium uppercase tracking-[0.35em] text-white/50">
             Dental Centrum · Gdańsk
           </p>
@@ -46,7 +58,6 @@ export default function GaleriaPage() {
           <p className="mt-6 max-w-2xl text-sm leading-7 text-white/60 md:text-base">
             Zobacz nasze gabinety, wnętrza oraz przestrzeń Dental Centrum.
           </p>
-
         </div>
       </section>
 
@@ -104,7 +115,6 @@ export default function GaleriaPage() {
             ))}
 
           </div>
-
         </div>
       </section>
 

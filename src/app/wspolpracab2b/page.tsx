@@ -236,137 +236,277 @@ export default function WspolpracaB2BPage() {
         </div>
       </section>
 
-{/* ZESPÓŁ DENTAL CENTRUM */}
 
-<section className="w-full bg-[#fbfaf7] py-20 md:py-28">
-  <div className={styles.sectionContainer}>
+      {/* ZESPÓŁ DENTAL CENTRUM */}
 
-    {/* NAGŁÓWEK */}
-    <div className="mb-14 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
-      <div>
-        <span className={styles.sectionLabel}>
-          DENTAL CENTRUM / NASZ ZESPÓŁ
-        </span>
+      <section className="w-full bg-[#fbfaf7] py-20 md:py-28">
+        <div className={styles.sectionContainer}>
 
-        <h2 className="mt-5 max-w-3xl font-serif text-4xl font-light leading-tight text-[#233b38] md:text-5xl lg:text-6xl">
-          Doświadczenie,
-          <em className="block text-[#ad795e]">
-            które buduje zaufanie.
-          </em>
-        </h2>
-      </div>
+          {/* NAGŁÓWEK */}
 
-      <p className="max-w-xl text-base leading-8 text-[#77736d] lg:justify-self-end">
-        Za Dental Centrum stoją lekarze, dla których ważne są
-        jakość leczenia, indywidualne podejście oraz dobra
-        komunikacja z pacjentami i partnerami.
-      </p>
-    </div>
+          <div className="mb-14 grid gap-8 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+            <div>
+              <span className={styles.sectionLabel}>
+                DENTAL CENTRUM / NASZ ZESPÓŁ
+              </span>
 
-    {/* LEKARZE */}
-    <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+              <h2 className="mt-5 max-w-3xl font-serif text-4xl font-light leading-tight text-[#233b38] md:text-5xl lg:text-6xl">
+                Doświadczenie i zaangażowanie,
+                <em className="block text-[#ad795e]">
+                  które budują zaufanie.
+                </em>
+              </h2>
+            </div>
 
-      {/* LEKARZ 1 */}
-<article className="grid overflow-hidden bg-white md:grid-cols-[1.1fr_1.5fr]">
-        <div className="relative min-h-[380px] overflow-hidden bg-[#e9e6df] md:min-h-[480px]">
-          <Image
-            src="/lekarz1.jpg"
-            alt="Lekarz Dental Centrum"
-            fill
-            sizes="(max-width: 768px) 100vw, 45vw"
-            className="object-cover object-center"
-          />
+            <p className="max-w-xl text-base leading-8 text-[#77736d] lg:justify-self-end">
+              Dental Centrum tworzą osoby, które łączą wieloletnie
+              doświadczenie, profesjonalizm i zaangażowanie w rozwój
+              nowoczesnej opieki stomatologicznej. Każda z nich wnosi
+              do działalności placówki inne kompetencje, wspólnie
+              budując miejsce oparte na jakości, zaufaniu i dobrej
+              organizacji.
+            </p>
+          </div>
+
+          {/* KARTY ZESPOŁU */}
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+
+            {/* RAFAŁ RACHUBKA */}
+
+            <article className="overflow-hidden bg-white">
+              <div className="grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr]">
+
+                {/* ZDJĘCIE */}
+
+                <div className="relative h-[420px] overflow-hidden bg-[#e9e6df] md:h-[520px]">
+                  <Image
+                    src="/lekarz1.jpg"
+                    alt="Rafał Rachubka – Dental Centrum"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+
+                {/* OPIS */}
+
+                <div className="flex flex-col p-7 md:p-8">
+
+                  <span className="text-xs tracking-[0.2em] text-[#ad795e]">
+                    DENTAL CENTRUM
+                  </span>
+
+                  <h3 className="mt-5 font-serif text-3xl font-light leading-tight text-[#233b38]">
+                    Rafał Rachubka
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-6 tracking-wide text-[#ad795e]">
+                    Technik dentystyczny · Protetyka stomatologiczna
+                  </p>
+
+                  <div className="mt-7 h-px w-12 bg-[#ad795e]" />
+
+                  <h4 className="mt-7 font-serif text-xl leading-snug text-[#233b38]">
+                    Ponad 30 lat doświadczenia w protetyce stomatologicznej
+                  </h4>
+
+                  <div className="mt-5 space-y-4 text-sm leading-7 text-[#77736d]">
+
+                    {/* WIDOCZNY FRAGMENT */}
+
+                    <p>
+                      Ponad trzy dekady doświadczenia zawodowego to wiedza,
+                      umiejętności i praktyka, które stanowią fundament
+                      jego codziennej pracy.
+                    </p>
+
+                    {/* ROZWIJANA CZĘŚĆ */}
+
+                    <details className="group">
+                      <div className="space-y-4 pt-4">
+
+                        <p>
+                          Rafał Rachubka od ponad 30 lat związany jest z techniką
+                          dentystyczną i protetyką stomatologiczną. Przez lata
+                          zdobywał doświadczenie, rozwijał swoje umiejętności
+                          i doskonalił warsztat, łącząc precyzję tradycyjnego
+                          rzemiosła z możliwościami nowoczesnej technologii.
+                        </p>
+
+                        <p>
+                          W swojej pracy wykorzystuje również rozwiązania
+                          cyfrowe, w tym technologię CAD/CAM, która pozwala
+                          na precyzyjne projektowanie i wykonywanie
+                          uzupełnień protetycznych.
+                        </p>
+
+                        <p>
+                          Szczególną wagę przywiązuje do jakości, estetyki
+                          i funkcjonalności wykonywanych prac. Ceni bezpośrednią
+                          współpracę z lekarzami stomatologami, indywidualne
+                          podejście do każdego przypadku oraz dbałość
+                          o najdrobniejsze szczegóły.
+                        </p>
+
+                        <p className="border-l border-[#ad795e] pl-4 font-serif text-lg leading-relaxed text-[#233b38]">
+                          Jego doświadczenie, wiedza i zaangażowanie stanowią
+                          ważny filar Dental Centrum.
+                        </p>
+
+                      </div>
+
+                      <summary className="mt-4 inline-flex cursor-pointer list-none items-center gap-2 font-semibold text-[#9b7548] transition-colors hover:text-[#765735] [&::-webkit-details-marker]:hidden">
+                        <span className="group-open:hidden">Czytaj więcej</span>
+                        <span className="hidden group-open:inline">Zwiń opis</span>
+                        <span className="transition-transform duration-200 group-open:rotate-180">
+                          ↓
+                        </span>
+                      </summary>
+                    </details>
+
+                  </div>
+
+                  {/* KONTAKT – ZAWSZE WIDOCZNY */}
+
+                  <div className="mt-8 border-t border-[#eeeae3] pt-6">
+                    <p className="text-xs tracking-[0.16em] text-[#99938a]">
+                      KONTAKT
+                    </p>
+
+                    <a
+                      href="tel:+48792481555"
+                      className="mt-3 inline-block text-sm text-[#233b38] transition hover:text-[#ad795e]"
+                    >
+                      +48 792 481 555
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+
+
+            {/* ALEKSANDRA RACHUBKA */}
+
+            <article className="overflow-hidden bg-white">
+              <div className="grid grid-cols-1 md:grid-cols-[0.85fr_1.15fr]">
+
+                {/* ZDJĘCIE */}
+
+                <div className="relative h-[420px] overflow-hidden bg-[#e9e6df] md:h-[520px]">
+                  <Image
+                    src="/lekarz4.png"
+                    alt="Aleksandra Rachubka – Dental Centrum"
+                    fill
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                    className="object-cover object-center"
+                  />
+                </div>
+
+                {/* OPIS */}
+
+                <div className="flex flex-col p-7 md:p-8">
+
+                  <span className="text-xs tracking-[0.2em] text-[#ad795e]">
+                    DENTAL CENTRUM
+                  </span>
+
+                  <h3 className="mt-5 font-serif text-3xl font-light leading-tight text-[#233b38]">
+                    Aleksandra Rachubka
+                  </h3>
+
+                  <p className="mt-3 text-sm leading-6 tracking-wide text-[#ad795e]">
+                    Współwłaścicielka · Menedżerka
+                  </p>
+
+                  <div className="mt-7 h-px w-12 bg-[#ad795e]" />
+
+                  <h4 className="mt-7 font-serif text-xl leading-snug text-[#233b38]">
+                    Organizacja, relacje i rozwój Dental Centrum
+                  </h4>
+
+                  <div className="mt-5 space-y-4 text-sm leading-7 text-[#77736d]">
+
+                    {/* WIDOCZNY FRAGMENT */}
+
+                    <p>
+                      Za sprawnym funkcjonowaniem Dental Centrum stoi
+                      nie tylko wiedza medyczna i doświadczenie, ale również
+                      dobra organizacja, zaangażowanie i przemyślane
+                      zarządzanie.
+                    </p>
+
+                    {/* ROZWIJANA CZĘŚĆ */}
+
+                    <details className="group">
+                      <div className="space-y-4 pt-4">
+
+                        <p>
+                          Aleksandra Rachubka jako współwłaścicielka i menedżerka
+                          Dental Centrum odpowiada za organizację i koordynację
+                          codziennego funkcjonowania placówki. Dba o sprawny
+                          przebieg procesów, wysoką jakość obsługi oraz budowanie
+                          dobrych relacji z pacjentami i partnerami biznesowymi.
+                        </p>
+
+                        <p>
+                          W swojej pracy stawia na profesjonalizm, komunikację
+                          i indywidualne podejście. Ważne jest dla niej tworzenie
+                          miejsca, w którym kompetencje zespołu idą w parze
+                          z przyjazną atmosferą, dobrą organizacją i troską
+                          o potrzeby pacjentów.
+                        </p>
+
+                        <p>
+                          Aktywnie uczestniczy w rozwoju Dental Centrum,
+                          dbając o to, aby placówka konsekwentnie realizowała
+                          swoje cele i utrzymywała wysokie standardy
+                          funkcjonowania.
+                        </p>
+
+                        <p className="border-l border-[#ad795e] pl-4 font-serif text-lg leading-relaxed text-[#233b38]">
+                          Jej zaangażowanie i umiejętności organizacyjne są
+                          ważną częścią wspólnego rozwoju Dental Centrum.
+                        </p>
+
+                      </div>
+
+                      <summary className="mt-4 inline-flex cursor-pointer list-none items-center gap-2 font-semibold text-[#9b7548] transition-colors hover:text-[#765735] [&::-webkit-details-marker]:hidden">
+                        <span className="group-open:hidden">Czytaj więcej</span>
+                        <span className="hidden group-open:inline">Zwiń opis</span>
+                        <span className="transition-transform duration-200 group-open:rotate-180">
+                          ↓
+                        </span>
+                      </summary>
+                    </details>
+
+                  </div>
+
+                  {/* KONTAKT – ZAWSZE WIDOCZNY */}
+
+                  <div className="mt-8 border-t border-[#eeeae3] pt-6">
+                    <p className="text-xs tracking-[0.16em] text-[#99938a]">
+                      KONTAKT
+                    </p>
+
+                    <a
+                      href="tel:+48792667335"
+                      className="mt-3 inline-block text-sm text-[#233b38] transition hover:text-[#ad795e]"
+                    >
+                      +48 792 667 335
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </article>
+
+          </div>
         </div>
+      </section>
 
-        <div className="flex flex-col justify-between p-7 md:p-9">
-          <div>
-            <span className="text-xs tracking-[0.2em] text-[#ad795e]">
-              DENTAL CENTRUM
-            </span>
 
-            <h3 className="mt-5 font-serif text-3xl font-light leading-tight text-[#233b38]">
-              Rafał Rachubka
-            </h3>
-
-            <p className="mt-3 text-sm tracking-wide text-[#ad795e]">
-              Lekarz dentysta
-            </p>
-
-            <div className="mt-7 h-px w-12 bg-[#ad795e]" />
-
-            <p className="mt-7 text-sm leading-7 text-[#77736d]">
-              Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis 
-            </p>
-          </div>
-
-          <div className="mt-9 border-t border-[#eeeae3] pt-6">
-            <p className="text-xs tracking-[0.16em] text-[#99938a]">
-              KONTAKT
-            </p>
-
-            <a
-              href="tel:+48583019780"
-              className="mt-3 inline-block text-sm text-[#233b38] transition hover:text-[#ad795e]"
-            >
-              +48 792 481 555
-            </a>
-          </div>
-        </div>
-      </article>
-
-      {/* LEKARZ 2 */}
-      <article className="grid overflow-hidden bg-white md:grid-cols-[0.9fr_1.1fr]">
-
-{/* ZDJĘCIE LEKARZA 2 */}
-<div className="relative min-h-[380px] overflow-hidden md:min-h-[480px]">
-  <Image
-    src="/lekarz2.jpg"
-    alt="Lekarz Dental Centrum"
-    fill
-    sizes="(max-width: 768px) 100vw, 45vw"
-    className="object-contain object-center"
-  />
-</div>
-
-        <div className="flex flex-col justify-between p-7 md:p-9">
-          <div>
-            <span className="text-xs tracking-[0.2em] text-[#ad795e]">
-              DENTAL CENTRUM
-            </span>
-
-            <h3 className="mt-5 font-serif text-3xl font-light leading-tight text-[#233b38]">
-               Aleksandra Rachubka
-            </h3>
-
-            <p className="mt-3 text-sm tracking-wide text-[#ad795e]">
-              Lekarz dentysta
-            </p>
-
-            <div className="mt-7 h-px w-12 bg-[#ad795e]" />
-
-            <p className="mt-7 text-sm leading-7 text-[#77736d]">
-              Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis  Tutaj zamieścimy opis 
-            </p>
-          </div>
-
-          <div className="mt-9 border-t border-[#eeeae3] pt-6">
-            <p className="text-xs tracking-[0.16em] text-[#99938a]">
-              KONTAKT
-            </p>
-
-            <a
-              href="tel:+48583019780"
-              className="mt-3 inline-block text-sm text-[#233b38] transition hover:text-[#ad795e]"
-            >
-              +48 792 667 335 
-            </a>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
       {/* ZAKRES WSPÓŁPRACY */}
 
       <section className={styles.scope} id="zakres">
